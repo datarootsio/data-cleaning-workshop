@@ -1,6 +1,5 @@
 package com.metaweb.gridlock.expr.functions;
 
-import java.lang.reflect.Array;
 import java.util.Properties;
 
 import com.metaweb.gridlock.expr.Function;
@@ -15,14 +14,14 @@ public class Slice implements Function {
 			Object to = args.length == 3 ? args[2] : null;
 			
 			if (v != null && from != null && from instanceof Number && (to == null || to instanceof Number)) {
-				if (v instanceof Array) {
+				if (v.getClass().isArray()) {
 					Object[] a = (Object[]) v;
 					int start = ((Number) from).intValue();
 					int end = to != null && to instanceof Number ? 
 							((Number) to).intValue() : a.length;
 								
 					if (start < 0) {
-						start = a.length - start;
+						start = a.length + start;
 					}
 					start = Math.min(a.length, Math.max(0, start));
 					
@@ -40,7 +39,7 @@ public class Slice implements Function {
 					
 					int start = ((Number) from).intValue();
 					if (start < 0) {
-						start = s.length() - start;
+						start = s.length() + start;
 					}
 					start = Math.min(s.length(), Math.max(0, start));
 					
