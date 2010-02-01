@@ -10,6 +10,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
+import com.metaweb.gridlock.browsing.Engine;
+import com.metaweb.gridlock.browsing.FilteredRows;
+import com.metaweb.gridlock.browsing.RowVisitor;
 import com.metaweb.gridlock.expr.Evaluable;
 import com.metaweb.gridlock.expr.Parser;
 import com.metaweb.gridlock.history.CellChange;
@@ -27,45 +30,60 @@ public class DoTextTransformCommand extends Command {
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
-		Project project = getProject(request);
-		int cellIndex = Integer.parseInt(request.getParameter("cell"));
-		
-		Column column = project.columnModel.getColumnByCellIndex(cellIndex);
-		if (column == null) {
-			respond(response, "{ \"code\" : \"error\", \"message\" : \"No such column\" }");
-			return;
-		}
-		
-		String columnName = column.headerLabel;
-		String expression = request.getParameter("expression");
-		
 		try {
+			Project project = getProject(request);
+			Engine engine = getEngine(request, project);
+			
+			int cellIndex = Integer.parseInt(request.getParameter("cell"));
+			Column column = project.columnModel.getColumnByCellIndex(cellIndex);
+			if (column == null) {
+				respond(response, "{ \"code\" : \"error\", \"message\" : \"No such column\" }");
+				return;
+			}
+			
+			String columnName = column.headerLabel;
+			String expression = request.getParameter("expression");
+			
 			Evaluable eval = new Parser(expression).getExpression();
-			//System.out.println("--- " + eval.toString());
 			Properties bindings = new Properties();
 			bindings.put("project", project);
 			
 			List<CellChange> cellChanges = new ArrayList<CellChange>(project.rows.size());
 			
-			for (int r = 0; r < project.rows.size(); r++) {
-				Row row = project.rows.get(r);
-				if (cellIndex < row.cells.size()) {
-					Cell cell = row.cells.get(cellIndex);
-					if (cell.value == null) {
-						continue;
-					}
-					
-					bindings.put("cell", cell);
-					bindings.put("value", cell.value);
-					
-					Cell newCell = new Cell();
-					newCell.value = eval.evaluate(bindings);
-					newCell.recon = cell.recon;
-					
-					CellChange cellChange = new CellChange(r, cellIndex, cell, newCell);
-					cellChanges.add(cellChange);
+			FilteredRows filteredRows = engine.getAllFilteredRows();
+			filteredRows.accept(project, new RowVisitor() {
+				int cellIndex;
+				Properties bindings;
+				List<CellChange> cellChanges;
+				Evaluable eval;
+				
+				public RowVisitor init(int cellIndex, Properties bindings, List<CellChange> cellChanges, Evaluable eval) {
+					this.cellIndex = cellIndex;
+					this.bindings = bindings;
+					this.cellChanges = cellChanges;
+					this.eval = eval;
+					return this;
 				}
-			}
+				
+				@Override
+				public boolean visit(Project project, int rowIndex, Row row) {
+					if (cellIndex < row.cells.size()) {
+						Cell cell = row.cells.get(cellIndex);
+						if (cell.value != null) {
+							bindings.put("cell", cell);
+							bindings.put("value", cell.value);
+							
+							Cell newCell = new Cell();
+							newCell.value = eval.evaluate(bindings);
+							newCell.recon = cell.recon;
+							
+							CellChange cellChange = new CellChange(rowIndex, cellIndex, cell, newCell);
+							cellChanges.add(cellChange);
+						}
+					}
+					return false;
+				}
+			}.init(cellIndex, bindings, cellChanges, eval));
 			
 			MassCellChange massCellChange = new MassCellChange(cellChanges);
 			HistoryEntry historyEntry = new HistoryEntry(
