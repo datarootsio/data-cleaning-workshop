@@ -39,7 +39,11 @@ public class ForEach implements Control {
                     
                     return results.toArray(); 
                 } finally {
-                    bindings.put(name, oldValue);
+                	if (oldValue != null) {
+                		bindings.put(name, oldValue);
+                	} else {
+                		bindings.remove(name);
+                	}
                 }
             }
         }
