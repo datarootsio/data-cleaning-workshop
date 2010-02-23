@@ -7,7 +7,7 @@ import com.metaweb.gridworks.expr.Function;
 public class ToNumber implements Function {
 
 	public Object call(Properties bindings, Object[] args) {
-		if (args.length == 1) {
+		if (args.length == 1 && args[0] != null) {
 			return args[0] instanceof Number ? args[0] : Double.parseDouble(args[0].toString());
 		}
 		return null;
