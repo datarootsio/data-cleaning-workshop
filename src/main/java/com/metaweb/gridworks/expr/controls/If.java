@@ -6,13 +6,14 @@ import org.json.JSONException;
 import org.json.JSONWriter;
 
 import com.metaweb.gridworks.expr.Control;
+import com.metaweb.gridworks.expr.ControlFunctionRegistry;
 import com.metaweb.gridworks.expr.Evaluable;
 import com.metaweb.gridworks.expr.ExpressionUtils;
 
 public class If implements Control {
     public String checkArguments(Evaluable[] args) {
         if (args.length != 3) {
-            return "if expects 3 arguments";
+            return ControlFunctionRegistry.getControlName(this) + " expects 3 arguments";
         }
         return null;
     }
