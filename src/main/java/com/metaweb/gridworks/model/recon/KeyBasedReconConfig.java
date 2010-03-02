@@ -15,14 +15,12 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONWriter;
 
-import com.metaweb.gridworks.expr.ExpressionUtils;
 import com.metaweb.gridworks.model.Cell;
 import com.metaweb.gridworks.model.Project;
 import com.metaweb.gridworks.model.Recon;
 import com.metaweb.gridworks.model.ReconCandidate;
 import com.metaweb.gridworks.model.Row;
 import com.metaweb.gridworks.model.Recon.Judgment;
-import com.metaweb.gridworks.model.recon.HeuristicReconConfig.ColumnDetail;
 import com.metaweb.gridworks.protograph.FreebaseTopic;
 import com.metaweb.gridworks.util.ParsingUtilities;
 
@@ -72,7 +70,7 @@ public class KeyBasedReconConfig extends StrictReconConfig {
 
 	@Override
 	public String getBriefDescription(Project project, String columnName) {
-        return "Reconcile cells in column " + columnName + " topics with keys in namespace " + namespace.id;
+        return "Reconcile cells in column " + columnName + " to topics with keys in namespace " + namespace.id;
 	}
 
 	public void write(JSONWriter writer, Properties options)
@@ -85,8 +83,6 @@ public class KeyBasedReconConfig extends StrictReconConfig {
         writer.endObject();
     }
 	
-	final static String s_mqlreadService = "http://api.freebase.com/api/service/mqlread";
-
 	@Override
 	public List<Recon> batchRecon(List<ReconJob> jobs) {
 		List<Recon> recons = new ArrayList<Recon>(jobs.size());
@@ -171,7 +167,7 @@ public class KeyBasedReconConfig extends StrictReconConfig {
 					);
 					
 					Recon recon = new Recon();
-					recon.candidates.add(candidate);
+					recon.addCandidate(candidate);
 					recon.match = candidate;
 					recon.judgment = Judgment.Matched;
 					
@@ -184,8 +180,10 @@ public class KeyBasedReconConfig extends StrictReconConfig {
 			e.printStackTrace();
 		}
 		
-		while (recons.size() < jobs.size()) {
-			recons.add(new Recon());
+		for (int i = 0; i < jobs.size(); i++) {
+			String key = ((KeyBasedReconJob) jobs.get(i)).key;
+			Recon recon = keyToRecon.get(key);
+			recons.add(recon);
 		}
 		
 		return recons;
