@@ -11,8 +11,8 @@ public class JaroDistance extends MetricDistance {
         this.distance = new Jaro();
     }
 
-    protected float d2(String x, String y) {
-        return Math.abs((float) this.distance.score(x, y) - 1.0f);
+    protected double d2(String x, String y) {
+        return this.distance.score(x, y);
     }
 
 }
