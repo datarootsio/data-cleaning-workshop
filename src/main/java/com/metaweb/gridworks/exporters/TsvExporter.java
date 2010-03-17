@@ -1,8 +1,11 @@
 package com.metaweb.gridworks.exporters;
 
 import java.io.IOException;
+import java.io.OutputStream;
 import java.io.Writer;
 import java.util.Properties;
+
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import com.metaweb.gridworks.browsing.Engine;
 import com.metaweb.gridworks.browsing.FilteredRows;
@@ -15,6 +18,15 @@ import com.metaweb.gridworks.model.Row;
 public class TsvExporter implements Exporter {
     public String getContentType() {
         return "text/plain";
+    }
+    
+    public boolean takeWriter() {
+        return true;
+    }
+    
+    public void export(Project project, Properties options, Engine engine,
+            OutputStream outputStream) throws IOException {
+        throw new NotImplementedException();
     }
     
     public void export(Project project, Properties options, Engine engine, Writer writer) throws IOException {
