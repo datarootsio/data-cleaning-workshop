@@ -13,7 +13,7 @@ import com.metaweb.gridworks.util.Pool;
 public class RowStarChange implements Change {
     final int rowIndex;
     final boolean newStarred;
-    boolean oldStarred;
+    Boolean oldStarred = null;
     
     public RowStarChange(int rowIndex, boolean newStarred) {
         this.rowIndex = rowIndex;
@@ -22,8 +22,9 @@ public class RowStarChange implements Change {
 
     public void apply(Project project) {
         Row row = project.rows.get(rowIndex);
-        
-        oldStarred = row.starred;
+        if (oldStarred == null) {
+            oldStarred = row.starred;
+        }
         row.starred = newStarred;
     }
 
