@@ -81,6 +81,23 @@ public class CsvExporterTests {
     }
     
     @Test
+    public void exportCsvWithComma(){
+        CreateGrid(3,3);
+        
+        project.rows.get(1).cells.set(1, new Cell("with, comma", null));
+        try {
+            SUT.export(project, options, engine, writer);
+        } catch (IOException e) {
+            Assert.fail();
+        }
+
+        Assert.assertEquals(writer.toString(), "\"column0\",\"column1\",\"column2\"\n" +
+                                               "\"row0cell0\",\"row0cell1\",\"row0cell2\"\n" +
+                                               "\"row1cell0\",\"with, comma\",\"row1cell2\"\n" +
+                                               "\"row2cell0\",\"row2cell1\",\"row2cell2\"\n");
+    }
+    
+    @Test
     public void exportCsvWithQuote(){
         CreateGrid(3,3);
         
