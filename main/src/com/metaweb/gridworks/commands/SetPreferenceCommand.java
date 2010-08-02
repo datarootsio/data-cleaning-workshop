@@ -27,8 +27,7 @@ public class SetPreferenceCommand extends Command {
         String valueString = request.getParameter("value");
         
         try {
-            JSONTokener t = new JSONTokener(valueString);
-            Object o = t.nextValue();
+            Object o = valueString == null ? null : new JSONTokener(valueString).nextValue();
             
             ps.put(prefName, PreferenceStore.loadObject(o));
             
