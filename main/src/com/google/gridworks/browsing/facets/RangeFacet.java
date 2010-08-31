@@ -72,10 +72,10 @@ public class RangeFacet implements Facet {
     public RangeFacet() {
     }
 
-    private static final String MIN = "min";
-    private static final String MAX = "max";
-    private static final String TO = "to";
-    private static final String FROM = "from";
+    protected static final String MIN = "min";
+    protected static final String MAX = "max";
+    protected static final String TO = "to";
+    protected static final String FROM = "from";
     
     public void write(JSONWriter writer, Properties options)
             throws JSONException {
