@@ -57,18 +57,20 @@ import com.google.refine.operations.EngineDependentMassCellOperation;
 import com.google.refine.operations.OperationRegistry;
 
 public class ReconDiscardJudgmentsOperation extends EngineDependentMassCellOperation {
+    final protected boolean _clearData;
+    
     static public AbstractOperation reconstruct(Project project, JSONObject obj) throws Exception {
         JSONObject engineConfig = obj.getJSONObject("engineConfig");
-        String columnName = obj.getString("columnName");
-        
         return new ReconDiscardJudgmentsOperation(
             engineConfig, 
-            columnName
+            obj.getString("columnName"),
+            obj.has("clearData") && obj.getBoolean("clearData")
         );
     }
     
-    public ReconDiscardJudgmentsOperation(JSONObject engineConfig, String columnName) {
+    public ReconDiscardJudgmentsOperation(JSONObject engineConfig, String columnName, boolean clearData) {
         super(engineConfig, columnName, false);
+        _clearData = clearData;
     }
 
     public void write(JSONWriter writer, Properties options)
@@ -79,18 +81,23 @@ public class ReconDiscardJudgmentsOperation extends EngineDependentMassCellOpera
         writer.key("description"); writer.value(getBriefDescription(null));
         writer.key("engineConfig"); writer.value(getEngineConfig());
         writer.key("columnName"); writer.value(_columnName);
+        writer.key("clearData"); writer.value(_clearData);
         writer.endObject();
     }
 
     protected String getBriefDescription(Project project) {
-        return "Discard recon judgments for cells in column " + _columnName;
+        return _clearData ?
+            "Discard recon judgments and clear recon data for cells in column " + _columnName :
+            "Discard recon judgments for cells in column " + _columnName;
     }
 
     protected String createDescription(Column column,
             List<CellChange> cellChanges) {
         
-        return "Discard recon judgments for " + cellChanges.size() + 
-            " cells in column " + column.getName();
+        return (_clearData ?
+            "Discard recon judgments and clear recon data" :
+            "Discard recon judgments") +
+            " for " + cellChanges.size() + " cells in column " + column.getName();
     }
 
     protected RowVisitor createRowVisitor(Project project, List<CellChange> cellChanges, long historyEntryID) throws Exception {
@@ -122,19 +129,21 @@ public class ReconDiscardJudgmentsOperation extends EngineDependentMassCellOpera
             public boolean visit(Project project, int rowIndex, Row row) {
                 Cell cell = row.getCell(cellIndex);
                 if (cell != null && cell.recon != null) {
-                    Recon newRecon;
-                    if (dupReconMap.containsKey(cell.recon.id)) {
-                        newRecon = dupReconMap.get(cell.recon.id);
-                        newRecon.judgmentBatchSize++;
-                    } else {
-                        newRecon = cell.recon.dup(historyEntryID);
-                        newRecon.match = null;
-                        newRecon.matchRank = -1;
-                        newRecon.judgment = Judgment.None;
-                        newRecon.judgmentAction = "mass";
-                        newRecon.judgmentBatchSize = 1;
-                        
-                        dupReconMap.put(cell.recon.id, newRecon);
+                    Recon newRecon = null;
+                    if (!_clearData) {
+                        if (dupReconMap.containsKey(cell.recon.id)) {
+                            newRecon = dupReconMap.get(cell.recon.id);
+                            newRecon.judgmentBatchSize++;
+                        } else {
+                            newRecon = cell.recon.dup(historyEntryID);
+                            newRecon.match = null;
+                            newRecon.matchRank = -1;
+                            newRecon.judgment = Judgment.None;
+                            newRecon.judgmentAction = "mass";
+                            newRecon.judgmentBatchSize = 1;
+                            
+                            dupReconMap.put(cell.recon.id, newRecon);
+                        }
                     }
                     
                     Cell newCell = new Cell(cell.value, newRecon);

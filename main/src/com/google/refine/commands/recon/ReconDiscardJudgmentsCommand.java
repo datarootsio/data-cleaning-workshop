@@ -48,7 +48,8 @@ public class ReconDiscardJudgmentsCommand extends EngineDependentCommand {
             HttpServletRequest request, JSONObject engineConfig) throws Exception {
         
         String columnName = request.getParameter("columnName");
+        boolean clearData = Boolean.parseBoolean(request.getParameter("clearData"));
         
-        return new ReconDiscardJudgmentsOperation(engineConfig, columnName);
+        return new ReconDiscardJudgmentsOperation(engineConfig, columnName, clearData);
     }
 }
