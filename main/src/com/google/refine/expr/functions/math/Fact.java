@@ -46,20 +46,9 @@ public class Fact implements Function {
 
     public Object call(Properties bindings, Object[] args) {
         if (args.length == 1 && args[0] != null && args[0] instanceof Number) {
-            return Fact.factorial(((Number) args[0]).intValue());
+            return FactN.factorial(((Number) args[0]).intValue(), 1);
         }
         return new EvalError(ControlFunctionRegistry.getFunctionName(this) + " expects a number");
-    }
-
-    /*
-     * Calculates the factorial of an integer, i.
-     * Returns 1 for zero and negative integers.
-     */
-    public static int factorial(int i){
-        if(i <= 1)
-            return 1;
-        else
-            return i * Fact.factorial(i - 1);
     }
 
     public void write(JSONWriter writer, Properties options)
