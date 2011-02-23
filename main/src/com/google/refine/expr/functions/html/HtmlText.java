@@ -1,6 +1,6 @@
 /*
 
-Copyright 2010, Google Inc.
+Copyright 2010,2011 Google Inc.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -64,7 +64,7 @@ public class HtmlText implements Function {
         throws JSONException {
 
         writer.object();
-        writer.key("description"); writer.value("Selects the text from within an element");
+        writer.key("description"); writer.value("Selects the text from within an element (including all child elements)");
         writer.key("params"); writer.value("Element e");
         writer.key("returns"); writer.value("String text");
         writer.endObject();
