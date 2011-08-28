@@ -46,3 +46,15 @@ String.prototype.endsWith = function(s) {
 String.prototype.contains = function(s) {
   return this.indexOf(s) >= 0;
 };
+
+String.encodeSeparator = function(s) {
+  return s.replace("\\", "\\\\")
+  .replace("\n", "\\n")
+  .replace("\t", "\\t");
+};
+
+String.decodeSeparator = function(s) {
+  return s.replace("\\n", "\n")
+  .replace("\\t", "\t")
+  .replace("\\\\", "\\");
+};
