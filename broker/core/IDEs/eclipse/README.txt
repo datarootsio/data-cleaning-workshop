@@ -1,6 +1,6 @@
 
-                                 Google Refine Helpers for Eclipse
-                                 ---------------------------------
+                                 OpenRefine Helpers for Eclipse
+                                 ------------------------------
                                  
                         
   This file contains Eclipse-specific help files that can get simplify your life 
@@ -10,7 +10,7 @@
   Launch Files (*.launch)
   -----------------------
   
-  These are files that help you running Data Cleaning Workshop directly from eclipse without having to execute
+  These are files that help you running Data Cleaning Workshop directly from Eclipse without having to execute
   the shell scripts.
   
   To run, right click on the files directly from Eclipse, then do "Run As -> <name>".
@@ -25,6 +25,6 @@
    Thank you for your interest.
    
    
-                                             The Google Refine Development Team
-                                           http://code.google.com/p/google-refine/
+                                             The OpenRefine Development Team
+                                           http://github.com/OpenRefine/OpenRefine
                                            

@@ -1,5 +1,5 @@
 
-                                 Google Refine for Eclipse
+                                 OpenRefine for Eclipse
                                  -------------------------
                                  
                         
@@ -24,6 +24,6 @@
    Thank you for your interest.
    
    
-                                             The Google Refine Development Team
-                                           http://code.google.com/p/google-refine/
+                                             The OpenRefine Development Team
+                                           http://github.com/OpenRefine/OpenRefine
                                            
