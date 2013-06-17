@@ -1,31 +1,24 @@
-                                O p e n R e f i n e
-                                -------------------
+#Data Cleaning Workshop
 
+[![Build Status](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop)
 
 Data Cleaning Workshop is a power tool that allows you to load data, understand it,
-clean it up, reconcile it internally, and augment it with data coming from
+clean it up, reconcile it to master database, and augment it with data coming from
 Freebase or other web sources. All with the comfort and privacy of 
 your own computer.
 
 
-Where can I get more information on ?
-----------------------------------------------
+###Where can I get more information?
 
-Look at the  web site
+Look at the Data Cleaning Workshop web site https://github.com/datarootsio/data-cleaning-workshop and the wiki https://github.com/datarootsio/data-cleaning-workshop
 
-  https://github.com/datarootsio/data-cleaning-workshop
-
-
-Licensing and legal issues
---------------------------
+###Licensing and legal issues
 
 OpenRefine is open source software and is licensed under the BSD license
-located in the LICENSE.txt. See that file also for information on open source
+located in the [LICENSE.txt](LICENSE.txt). See that file also for information on open source
 libraries that Data Cleaning Workshop depends on.
 
-
-Credits
--------
+###Credits
 
 This software was created by Metaweb Technologies, Inc. and originally written
 and conceived by David Huynh <dfhuynh@google.com>. Metaweb Technologies, Inc.
@@ -51,12 +44,10 @@ This is the full list of contributors (in chronological order):
  - Rod Salazar <rodrod.salazar@gmail.com>
  - pxb <pxb1988@gmail.com>
  
- We welcome additional contributors if you'd like to help out.
-                                - o -
+We welcome additional contributors if you'd like to help out.
 
+Thank you for your interest.
 
- Thank you for your interest.
- 
- 
-                                           The OpenRefine Development Team
-                                        http://github.com/OpenRefine/OpenRefine
+----
+The OpenRefine Development Team
+https://github.com/datarootsio/data-cleaning-workshop
