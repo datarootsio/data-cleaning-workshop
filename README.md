@@ -4,7 +4,7 @@
 
 Data Cleaning Workshop is a power tool that allows you to load data, understand it,
 clean it up, reconcile it to master database, and augment it with data coming from
-Freebase or other web sources. All with the comfort and privacy of 
+the web. All with the comfort and privacy of 
 your own computer.
 
 
