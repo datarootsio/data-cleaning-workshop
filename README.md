@@ -4,22 +4,37 @@
 
 Data Cleaning Workshop is a power tool that allows you to load data, understand it,
 clean it up, reconcile it, and augment it with data coming from
-the web. All with the comfort and privacy of 
-your own computer.
+the web. All with the comfort and privacy of your own computer.
 
+Download
+-----------------------
+* [Latest Beta 2.6 rc2 - Recommended](https://github.com/datarootsio/data-cleaning-workshop)
+* [Latest Stable 2.5](https://github.com/datarootsio/data-cleaning-workshop)
 
-###Where can I get more information?
+Documentation and Videos
+-------------------------
+* [Documentation Wiki](https://github.com/datarootsio/data-cleaning-workshop)
+* [FAQ](https://github.com/datarootsio/data-cleaning-workshop)
+* [Official Website and tutorial videos](https://github.com/datarootsio/data-cleaning-workshop)
 
-Look at the Data Cleaning Workshop web site https://github.com/datarootsio/data-cleaning-workshop and the wiki https://github.com/datarootsio/data-cleaning-workshop
+Contributing to the project
+---------------------------
+* [Donate $](https://github.com/datarootsio/data-cleaning-workshop)
+* [Developers Guide & Architecture](https://github.com/datarootsio/data-cleaning-workshop)
 
-###Licensing and legal issues
+Contact us
+----------
+* [Mailing List](https://github.com/datarootsio/data-cleaning-workshop)
+* [Twitter](https://github.com/datarootsio/data-cleaning-workshop)
 
+Licensing and legal issues
+--------------------------
 OpenRefine is open source software and is licensed under the BSD license
 located in the [LICENSE.txt](LICENSE.txt). See that file also for information on open source
 libraries that Data Cleaning Workshop depends on.
 
-###Credits
-
+Credits
+-------
 This software was created by Metaweb Technologies, Inc. and originally written
 and conceived by David Huynh <dfhuynh@google.com>. Metaweb Technologies, Inc.
 was acquired by Google, Inc. in July 2010 and the product was renamed Data Cleaning Workshop.
@@ -43,11 +58,5 @@ This is the full list of contributors (in chronological order):
  - Gabriel Sjoberg <GabrielSjoberg@gmail.com>
  - Rod Salazar <rodrod.salazar@gmail.com>
  - pxb <pxb1988@gmail.com>
- 
-We welcome additional contributors if you'd like to help out.
 
-Thank you for your interest.
 
-----
-The OpenRefine Development Team
-https://github.com/datarootsio/data-cleaning-workshop
