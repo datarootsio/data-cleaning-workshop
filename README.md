@@ -8,7 +8,7 @@ the web. All with the comfort and privacy of your own computer.
 
 Download
 -----------------------
-* [Latest Beta 2.6 rc2 - Recommended](https://github.com/datarootsio/data-cleaning-workshop)
+* [Latest Beta 2.7 rc1 - Recommended](https://github.com/datarootsio/data-cleaning-workshop)
 * [Latest Stable 2.5](https://github.com/datarootsio/data-cleaning-workshop)
 
 Documentation and Videos
