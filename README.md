@@ -10,7 +10,7 @@ the web. All with the comfort and privacy of your own computer.
 
 Download
 -----------------------
-* [Latest Stable 2.7](https://github.com/datarootsio/data-cleaning-workshop)
+* [Data Cleaning Workshop 2.7](https://github.com/datarootsio/data-cleaning-workshop)
 
 Documentation and Videos
 -------------------------
