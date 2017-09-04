@@ -24,6 +24,9 @@ When reporting a bug please provide the following information to help reproduce 
 
 You don't need to be coder to contribute to Data Cleaning Workshop. Did you wrote a tutorial or article about Data Cleaning Workshop on your blog or site? Are you organizing a workshop or presentation Data Cleaning Workshop in your city? Let us know via our [user discussion list](https://github.com/datarootsio/data-cleaning-workshop) or twitter account ([@OpenRefine](https://github.com/datarootsio/data-cleaning-workshop)). We will share the news via our monthly update and via our twitter handle. 
 
+## Contributing translations
+
+You can help us [translate OpenRefine](https://github.com/datarootsio/data-cleaning-workshop) in as many languages as possible [via Weblate](https://github.com/datarootsio/data-cleaning-workshop).
 
 ##  Contributing code 
 
@@ -43,7 +46,7 @@ If you make trivial changes, you can send them directly via a pull request. **Pl
 
 We want to keep the quality of the trunk at a very high level, since this is ultimately where the Stable Releases are built from after bugs are fixed. Please take the time to test your changes (including travis-ci) before sending a pull request.
 
-Data Cleaning Workshop is volunteer supported. Pull Request are reviewed and merged by [Tom Morris (@tfmorris)](https://github.com/tfmorris). All Pull Request will be answered, however it may take some time to get back to you. Thank you in advance for your patience.
+Data Cleaning Workshop is volunteer supported. Pull Request are reviewed and merged by volunteers. All Pull Request will be answered, however it may take some time to get back to you. Thank you in advance for your patience.
 
 If you don't where to start and are looking for a bug to fix, please see our [issue list](https://github.com/datarootsio/data-cleaning-workshop). 
 
