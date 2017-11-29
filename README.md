@@ -20,8 +20,8 @@ Documentation and Videos
 
 Contributing to the project
 ---------------------------
-* [Donate $](https://github.com/datarootsio/data-cleaning-workshop)
 * [Developers Guide & Architecture](https://github.com/datarootsio/data-cleaning-workshop)
+* [Contributing Guide](https://github.com/datarootsio/data-cleaning-workshop/blob/master/CONTRIBUTING.md)
 
 Contact us
 ----------
