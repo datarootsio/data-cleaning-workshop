@@ -22,6 +22,7 @@ Contributing to the project
 ---------------------------
 * [Developers Guide & Architecture](https://github.com/datarootsio/data-cleaning-workshop)
 * [Contributing Guide](https://github.com/datarootsio/data-cleaning-workshop/blob/master/CONTRIBUTING.md)
+* [Project Governance](https://github.com/datarootsio/data-cleaning-workshop/blob/master/GOVERNANCE.md)
 
 Contact us
 ----------
