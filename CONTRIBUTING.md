@@ -1,4 +1,4 @@
-This document present how you can contribute to the Data Cleaning Workshop project. 
+This document present how you can contribute to the Data Cleaning Workshop project. Please review also our [Governance model](https://github.com/datarootsio/data-cleaning-workshop/blob/master/GOVERNANCE.md)
 
 ## Documentation, Questions or Problem
 
