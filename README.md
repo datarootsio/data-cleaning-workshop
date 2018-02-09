@@ -6,7 +6,7 @@ Data Cleaning Workshop is a power tool that allows you to load data, understand 
 clean it up, reconcile it, and augment it with data coming from
 the web. All with the comfort and privacy of your own computer.
 
-[<img src="https://github.com/datarootsio/data-cleaning-workshop/blob/master/graphics/icon/open-refine-256px.png" align="right">](https://github.com/datarootsio/data-cleaning-workshop)
+[<img src="https://github.com/datarootsio/data-cleaning-workshop/blob/master/graphics/icon/open-refine-320px.png" align="right">](https://github.com/datarootsio/data-cleaning-workshop)
 
 Download
 -----------------------
