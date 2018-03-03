@@ -31,7 +31,7 @@ You can help us [translate OpenRefine](https://github.com/datarootsio/data-clean
 ##  Contributing code 
 
 You can contribute code in three different ways:
-- Fix minor bugs - you can check the [issues flagged as easy](https://github.com/datarootsio/data-cleaning-workshop)
+- Fix minor bugs - you can check the issues flagged as [help wanted](https://github.com/datarootsio/data-cleaning-workshop) or [good first issue](https://github.com/datarootsio/data-cleaning-workshop)
 - Develop an Data Cleaning Workshop extension 
 - Start your own distribution or fork
 
