@@ -6,7 +6,7 @@ Data Cleaning Workshop is a power tool that allows you to load data, understand 
 clean it up, reconcile it, and augment it with data coming from
 the web. All with the comfort and privacy of your own computer.
 
-[<img src="https://github.com/datarootsio/data-cleaning-workshop/blob/master/graphics/icon/open-refine-256px.png" align="right">](https://github.com/datarootsio/data-cleaning-workshop)
+[<img src="https://github.com/datarootsio/data-cleaning-workshop/blob/master/graphics/icon/open-refine-320px.png" align="right">](https://github.com/datarootsio/data-cleaning-workshop)
 
 Download
 -----------------------
@@ -22,6 +22,7 @@ Contributing to the project
 ---------------------------
 * [Developers Guide & Architecture](https://github.com/datarootsio/data-cleaning-workshop)
 * [Contributing Guide](https://github.com/datarootsio/data-cleaning-workshop/blob/master/CONTRIBUTING.md)
+* [Project Governance](https://github.com/datarootsio/data-cleaning-workshop/blob/master/GOVERNANCE.md)
 
 Contact us
 ----------
@@ -31,7 +32,7 @@ Contact us
 Licensing and legal issues
 --------------------------
 OpenRefine is open source software and is licensed under the BSD license
-located in the [LICENSE.txt](LICENSE.txt). See that file also for information on open source
+located in the [LICENSE.txt](LICENSE.txt). See the folder `licenses` for information on open source
 libraries that Data Cleaning Workshop depends on.
 
 Credits
@@ -114,3 +115,4 @@ CURRENT CONTRIBUTORS
  - Matthias Findeisen
  - Mathieu Saby
  - Allan Nordhøy <epost@anotheragency.no>
+ - Tony Opara <tcbuzor@gmail.com>
