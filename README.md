@@ -2,9 +2,9 @@
 
 [![Join the chat at https://github.com/datarootsio/data-cleaning-workshop](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop) [![Build Status](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/210578308bba42c5922c767493e83cf4)](https://github.com/datarootsio/data-cleaning-workshop) [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/210578308bba42c5922c767493e83cf4)](https://github.com/datarootsio/data-cleaning-workshop) [![Translation progress](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop)
 
-Data Cleaning Workshop is a power tool that allows you to load data, understand it,
+Data Cleaning Workshop is a Java-based power tool that allows you to load data, understand it,
 clean it up, reconcile it, and augment it with data coming from
-the web. All with the comfort and privacy of your own computer.
+the web. All from a web browser and the comfort and privacy of your own computer.
 
 [<img src="https://github.com/datarootsio/data-cleaning-workshop/blob/master/graphics/icon/open-refine-320px.png" align="right">](https://github.com/datarootsio/data-cleaning-workshop)
 
