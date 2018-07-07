@@ -4,4 +4,4 @@ An evergrowing list of our forever immortalized Data Cleaning Workshop Backers t
 2. PaulZH -
 3. Jens Willmer -
 4. mroswell -
-5. Google Inc. News Lab
+5. Google News Initiative - https://newsinitiative.withgoogle.com/
