@@ -24,9 +24,9 @@ A clear and concise description of what you expected to happen or to show.
 If applicable, add screenshots to help explain your problem.
 
 **Desktop (please complete the following information):**
- - OS: [e.g. iOS, Windows, Linux]
- - Browser [e.g. chrome, firefox, safari, NOTE: Data Cleaning Workshop does not support IE but works OK in most cases]
- - Version [e.g. 22]
+ - OS: [e.g. iOS, Windows 10, Linux, Ubuntu 18.04]
+ - Browser Version: [e.g. Chrome 19, Firefox 61, Safari, NOTE: Data Cleaning Workshop does not support IE but works OK in most cases]
+ - JRE or JDK Version:[output of "java -version" e.g. JRE 1.8.0_181]
 
 **Data Cleaning Workshop (please complete the following information):**
  - Version [e.g. Data Cleaning Workshop 3.0 Beta]
