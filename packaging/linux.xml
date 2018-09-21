@@ -41,6 +41,10 @@
 	<exclude>**/tests/**</exclude>
 	<exclude>**/src/**</exclude>
 	<exclude>**/*.java</exclude>
+	<exclude>**/lib-src/**</exclude>
+	<exclude>**/pom.xml</exclude>
+	<exclude>**/.settings/**</exclude>
+	<exclude>**/.project</exclude>
       </excludes>
     </fileSet>
   </fileSets>
