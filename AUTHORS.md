@@ -1,13 +1,14 @@
 This file lists the contributors to Data Cleaning Workshop.
 
-EMERITUS CREATORS (no longer active but honored for bringing Data Cleaning Workshop to life)
+EMERITUS CREATORS 
 ---------------------
-
+No longer active but honored for bringing Data Cleaning Workshop to life.
  - David Huynh 
  - Stefano Mazzocchi 
  
-EMERITUS CONTRIBUTORS (no longer active but honored here for their previous contributions)
+EMERITUS CONTRIBUTORS 
 ---------------------
+No longer active but honored here for their previous contributions
 
  - Vishal Talwar 
  - Jeff Fry 
