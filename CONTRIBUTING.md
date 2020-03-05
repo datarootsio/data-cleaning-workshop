@@ -1,4 +1,4 @@
-This document present how you can contribute to the Data Cleaning Workshop project. Please review also our [Governance model](https://github.com/datarootsio/data-cleaning-workshop/blob/master/GOVERNANCE.md)
+This document presents how you can contribute to the Data Cleaning Workshop project. Please also review our [Governance model](https://github.com/datarootsio/data-cleaning-workshop/blob/master/GOVERNANCE.md)
 
 ## Documentation, Questions or Problem
 
@@ -8,21 +8,9 @@ Our issue list is only for reporting specific bugs and requesting specific featu
 
 If you really want to file a bug or request a feature, go to this [issue list](https://github.com/datarootsio/data-cleaning-workshop). Please use the search function first to make sure a similar issue doesn't already exist. 
 
-### Guidelines for Reporting a Bug
-
-When reporting a bug please provide the following information to help reproduce the bug:
-- Version of Data Cleaning Workshop used (Data Cleaning Workshop 2.6, OpenRefine2.7, an other distribution?)
-- Operating Systems and version
-- Browser + version used - Please note that Data Cleaning Workshop doesn't support Internet Explorer
-- Steps followed to create the issue
-- If you are allowed, it is awesome if you can include the data generating the issue
-- Current Results
-- Expected Results
-
-
 ## Promote Data Cleaning Workshop
 
-You don't need to be coder to contribute to Data Cleaning Workshop. Did you write a tutorial or article about Data Cleaning Workshop on your blog or site? Are you organizing a workshop or presentation for Data Cleaning Workshop in your city? Let us know via our [user discussion list](https://github.com/datarootsio/data-cleaning-workshop) or Twitter account ([@OpenRefine](https://github.com/datarootsio/data-cleaning-workshop)). We will share the news via our monthly update and via our Twitter handle. 
+You don't need to be a coder to contribute to Data Cleaning Workshop. Did you write a tutorial or article about Data Cleaning Workshop on your blog or site? Are you organizing a workshop or presentation for Data Cleaning Workshop in your city? Let us know via our [user discussion list](https://github.com/datarootsio/data-cleaning-workshop) or Twitter account ([@OpenRefine](https://github.com/datarootsio/data-cleaning-workshop)). We will share the news via our monthly update and via our Twitter handle. 
 
 ## Contributing translations
 
@@ -31,14 +19,15 @@ You can help us [translate OpenRefine](https://github.com/datarootsio/data-clean
 ##  Contributing code 
 
 You can contribute code in three different ways:
-- Fix minor bugs - you can check the issues flagged as [help wanted](https://github.com/datarootsio/data-cleaning-workshop) or [good first issue](https://github.com/datarootsio/data-cleaning-workshop)
+- Fix minor bugs - you can check the issues flagged as [help wanted](https://github.com/datarootsio/data-cleaning-workshop) or [good first issue](https://github.com/datarootsio/data-cleaning-workshop) or [good second issue](https://github.com/datarootsio/data-cleaning-workshop)
 - Develop an Data Cleaning Workshop extension 
 - Start your own distribution or fork
 
-All developers including new distributions and plugin developers are invited to leverage the following Data Cleaning Workshop project management areas to avoid the dispersion of the community in different communication channels.
+All developers including new distributions and plugin developers are invited to leverage the following Data Cleaning Workshop project management areas to avoid splitting the community in different communication channels.
 - the [wiki](https://github.com/datarootsio/data-cleaning-workshop) for shared documentation between both user docs and [documentation for developer](https://github.com/datarootsio/data-cleaning-workshop)
 - the [developer mailing list](https://github.com/datarootsio/data-cleaning-workshop) for technical questions, new feature development and anything code related. We invite you to share you idea first via the developer mailing list. Someone may be able to point out to existing development saving you hours of research and development. 
 - [Data Cleaning Workshop github issue tracker](https://github.com/datarootsio/data-cleaning-workshop) for requesting new features and bug reports.
+- [Gitter Chat](https://github.com/datarootsio/data-cleaning-workshop)
 
 ### How to submit PR's (pull requests), patches, and bug fixes
 
@@ -56,7 +45,7 @@ If you don't know where to start and are looking for a bug to fix, please see ou
 
 ### New functionalities via extensions
 
-Data Cleaning Workshop support a plugin architecture to extend its functionality. You can find more information on how to write extension on [our wiki](https://github.com/datarootsio/data-cleaning-workshop). Giuliano Tortoreto wrote a separate documentation detailling how to build extension for Data Cleaning Workshop. A [LaTeX](https://github.com/datarootsio/data-cleaning-workshop) and [PDF version](https://github.com/datarootsio/data-cleaning-workshop) are available.
+Data Cleaning Workshop support a plugin architecture to extend its functionality. You can find more information on how to write extension on [our wiki](https://github.com/datarootsio/data-cleaning-workshop). Giuliano Tortoreto wrote a separate documentation detailing how to build an extension for Data Cleaning Workshop. A [LaTeX](https://github.com/datarootsio/data-cleaning-workshop) and [PDF version](https://github.com/datarootsio/data-cleaning-workshop) are available.
 
 If you want to list your extension on the download page, please edit [this file](https://github.com/datarootsio/data-cleaning-workshop).
 
@@ -68,4 +57,4 @@ Github offers a powerful system to work between different repositories and we en
 - You can cross reference issues and pull requests between Github repository using `user/repository#number` ([see more here](https://github.com/blog/967-github-secrets#cross-repository-issue-references))
 - If you want to merge a Pull Request that is pending for review to your own repository check the pull request locally ([see more here](https://help.github.com/articles/checking-out-pull-requests-locally/)).
 
-Don't forget to contribute to the upstream (main Data Cleaning Workshop) repository so your changes from your distribution can be reviewed and merged and to keep other developers aware of your progress. If you want to list your distribution on the download page, please edit [this file](https://github.com/datarootsio/data-cleaning-workshop).
+Don't forget to contribute to the upstream ([main Data Cleaning Workshop repository](https://github.com/datarootsio/data-cleaning-workshop)) so your changes from your distribution can be reviewed and merged and to keep other developers aware of your progress. If you want to list your distribution on the download page, please edit [this file](https://github.com/datarootsio/data-cleaning-workshop).
