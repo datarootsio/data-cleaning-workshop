@@ -1,9 +1,9 @@
 ---
 id: index
-title: Data Cleaning Workshop reference manual
+title: Data Cleaning Workshop product reference
 sidebar_label: Index
 ---
 
-This site is just a prototype to propose a basic publishing infrastructure for Data Cleaning Workshop's new reference manual.
+This site is just a prototype to propose a basic publishing infrastructure for Data Cleaning Workshop's new product reference.
 
 The structure on the left hand side is just a placeholder, as are the contents of all pages.
