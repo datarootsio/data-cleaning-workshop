@@ -51,4 +51,4 @@ was acquired by Google, Inc. in July 2010 and the product was renamed Data Clean
 In October 2012, it was renamed Data Cleaning Workshop as it transitioned to a 
 community-supported product.
 
-See `AUTHORS.md` for the list of OpenRefine contributors.
+See [AUTHORS.md](./AUTHORS.md) for the list of OpenRefine contributors and [CONTRIBUTING.md](./CONTRIBUTING.md) for instructions on how to contribute yourself.
