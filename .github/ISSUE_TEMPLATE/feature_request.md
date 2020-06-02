@@ -1,6 +1,9 @@
 ---
 name: Feature request
 about: Suggest an idea for Data Cleaning Workshop
+title: ''
+labels: enhancement, triage needed
+assignees: ''
 
 ---
 
