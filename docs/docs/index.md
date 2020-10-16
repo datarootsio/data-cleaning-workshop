@@ -1,4 +1,5 @@
 ---
+slug: /
 id: index
 title: Data Cleaning Workshop product reference
 sidebar_label: Index
