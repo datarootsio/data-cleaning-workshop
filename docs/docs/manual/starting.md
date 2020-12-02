@@ -10,13 +10,13 @@ An Data Cleaning Workshop project is started by importing in some existing data 
 
 No matter where your data comes from, Data Cleaning Workshop doesn’t modify your original data source. It copies all the information from your input, creates its own project file, and stores it in your [workspace directory](installing#set-where-data-is-stored).   
 
-The data and all of your edits are automatically saved inside the project file. When you’re finished modifying the data, you can export it back out into the file format of your choice. 
+The data and all of your edits are [automatically saved](#autosaving) inside the project file. When you’re finished modifying the data, you can [export it back out](exporting) into the file format of your choice. 
 
-You can also receive and open other people’s projects, or send them yours, by exporting a project archive and importing it. 
+You can also receive and open other people’s projects, or send them yours, by [exporting a project archive](exporting#export-a-project) and [importing it](#import-a-project). 
 
 ## Create project by importing data
 
-When you start Data Cleaning Workshop, you’ll be taken to the “Create Project” screen. You’ll see on the left side of the screen that your options are to: 
+When you start Data Cleaning Workshop, you’ll be taken to the <span class="menuItems">Create Project</span> screen. You’ll see on the left side of the screen that your options are to: 
 
 *   import data from a file on your computer
 *   import data from a link to the web
@@ -49,6 +49,7 @@ If you supply two or more files for one project, the files’ rows will be loade
 |berries.csv||9|Mulberry|Greece|
 |berries.csv||2|Blueberry|Canada|
 
+You cannot combine two datasets into one project by appending data within rows. You can, however, combine two projects later using functions such as [cross()](grelfunctions/#crosscell-s-projectname-s-columnname).  
 
 For whichever method you choose, when you click <span class="menuItems">Next >></span> you will be given a preview and a chance to configure the way Data Cleaning Workshop interprets the file.  
 
@@ -94,54 +95,57 @@ If your connection is successful, you will see a Query Editor where you can run 
 
 You have two ways to load in data from Google Sheets:
 *   A link to an accessible Google Sheet (that is, one with link-sharing turned on)
-*   Selecting a Google Sheet in your Google Drive
-
+*   Selecting a Google Sheet in your Google Drive.
 
 #### Google Sheet by URL
 
 You can import data from any Google Sheet that has link-sharing turned on. Paste in a URL that looks something like
 
-```https://docs.google.com/spreadsheets/………/edit?usp=sharing```
+```
+https://docs.google.com/spreadsheets/………/edit?usp=sharing
+```
 
-This will only work with Sheets, not with any other Google Drive file that might have an available link, including `.xls` and other valid files that are hosted in Google Drive. These links will also not work [by URL](#web-addresses-urls), so you need to download the files to your computer.
+This will only work with Sheets, not with any other Google Drive file that might have an available link, including `.xls` and other valid files that are hosted in Google Drive. These links will not work when attempting to start a project [by URL](#web-addresses-urls) either, so you need to download those files to your computer.
 
 #### Google Sheet from Drive
 
 You can authorize OpenRefine to access your Google Drive data and import data from any Google Sheet it finds there. This will include Sheets that belong to you and Sheets that are shared with you, as well as Sheets that are in your trash. 
 
-OpenRefine will not show spreadsheets that are in your email inbox or stored in any other Google property - only in Drive. It also won’t show all compatible file formats, only Sheets files.
+Data Cleaning Workshop will not show spreadsheets that are in your email inbox or stored in any other Google property - only in Drive. It also won’t show all compatible file formats, only Sheets files.
 
-OpenRefine will generate a list of all Sheets it finds, with the most recently modified Sheets at the top. If a file you’ve just added isn’t showing in this list, you can close and restart OpenRefine, or simply navigate to an existing project, open it, then head back to the <span class="menuItems">Create Project</span> window and check again. 
+Data Cleaning Workshop will generate a list of all Sheets it finds, with the most recently modified Sheets at the top. If a file you’ve just added isn’t showing in this list, you can close and restart Data Cleaning Workshop, or simply navigate to an existing project, open it, then head back to the <span class="menuItems">Create Project</span> window and check again. 
 
-When you click <span class="menuItems">Preview</span> the Sheet will open in a new browser tab. When you click the Sheet title, OpenRefine will begin to process the data.
+When you click <span class="menuItems">Preview</span> the Sheet will open in a new browser tab. When you click the Sheet title, Data Cleaning Workshop will begin to process the data.
 
 
 ## Project preview
 
-Once OpenRefine is ready to import the data, you will see a screen with <span class="menuItems">Configure Parsing Options</span> at the top. You’ll see a preview of the first 100 rows and all identified columns. 
+Once Data Cleaning Workshop is ready to import the data, you will see a screen with <span class="menuItems">Configure Parsing Options</span> at the top. You’ll see a preview of the first 100 rows and all identified columns. 
 
-At the bottom of the screen you will find options for telling OpenRefine how to process what it has found. You can tell it which row(s) to parse as column headers, as well as to ignore any number of rows at the top. You can also select a specific range of rows to work with, by discarding some rows at the top (excluding the header) and limiting the total number of rows it loads.
+At the bottom of the screen you will find options for telling Data Cleaning Workshop how to process what it has found. You can tell it which row(s) to parse as column headers, as well as to ignore any number of rows at the top. You can also select a specific range of rows to work with, by discarding some rows at the top (excluding the header) and limiting the total number of rows it loads.
 
 OpenRefine tries to guess how to parse your data based on the file extension. For example, `.xml` files are going to be parsed as though they are formatted in XML. An unknown file extension (or your clipboard copy-paste) is assumed to be either tab-separated or comma-separated. OpenRefine looks for a tab character; if one is found, it assumes you have imported tab-separated data.
 
-If OpenRefine isn’t certain what format you imported, it will provide a list of possibilities under <span class="menuItems">Parse data as</span> and some settings. You can specify a custom separator now, or split columns later on in the project interface. 
+If Data Cleaning Workshop isn’t certain what format you imported, it will provide a list of possibilities under <span class="menuItems">Parse data as</span> and some settings. You can specify a custom separator now, or split columns later on in the project interface. 
 
 If you imported a spreadsheet with multiple worksheets, they will be listed along with the number of rows they contain. You can only select data from one worksheet. 
 
-Note that OpenRefine does not preserve any formatting, such as cell or text colour, that my have been in the original data file. 
+Note that Data Cleaning Workshop does not preserve any formatting, such as cell or text colour, that my have been in the original data file. 
+
+:::info
+Look for character encoding issues at this stage. You may want to manually select an encoding, such as UTF-8, UTF-16, or ASCII, if Data Cleaning Workshop does not display some characters correctly in the preview. Once your project is created, you can specify another encoding for specific columns using the [reinterpret() function](grelfunctions#reinterprets-s-encoder).
+:::
 
 You should create a project name at this stage. You can also supply tags to keep your projects organized. When you’re happy with the preview, click <span class="menuItems">Create Project</span>.
 
 
 ## Import a project
 
-Because OpenRefine only runs locally on your computer, you can’t have a project accessible to more than one person at the same time. 
+Because Data Cleaning Workshop only runs locally on your computer, you can’t have a project accessible to more than one person at the same time. 
 
-The best way to collaborate with another person is to export and import projects that save all your changes, so that you can pick up where someone else left off. You can also [export projects](exporting) and import them to new computers of your own, such as for working on the same project from the office and from home. 
+The best way to collaborate with another person is to export and import projects that save all your changes, so that you can pick up where someone else left off. You can also [export projects](exporting#export-a-project) and import them to new computers of your own, such as for working on the same project from the office and from home. 
 
-An exported project will include all of the [history](running#history-undoredo), so you can see (and undo) all the changes from the previous user. It is essentially a point-in-time snapshot of their work. OpenRefine only exports projects as `.tar.gz` files at this time. 
-
-### Instructions
+An exported project will include all of the [history](running#history-undoredo), so you can see (and undo) all the changes from the previous user. It is essentially a point-in-time snapshot of their work. Data Cleaning Workshop only exports projects as `.tar.gz` files at this time. 
 
 Once someone has sent you a project archive file from their computer, you can save it anywhere, including your Downloads folder. 
 
@@ -151,7 +155,7 @@ You can rename the project if you’d like - we recommend adding your name, a da
 
 Then, click <span class="menuItems">Import Project</span>.  Your project should appear with a step count beside <span class="menuItems">Undo/Redo</span> if steps were saved by the exporter. 
 
-OpenRefine will store the project in its own workspace directory, so you can now delete the original file that was sent to you. 
+Data Cleaning Workshop will store the project in its own workspace directory, so you can now delete the original file that was sent to you. 
 
 
 ## Project management
@@ -161,13 +165,13 @@ You can access all of your created projects by clicking on <span class="menuItem
 
 ### Naming projects 
 
-You may have multiple projects from the same dataset, or multiple versions from sharing a project with another person. OpenRefine automatically generates a project name from the imported file, or <span class="menuItems">clipboard</span> when you use Clipboard importing. Project names don’t have to be unique, so OpenRefine will create many projects with the same name unless you intervene. 
+You may have multiple projects from the same dataset, or multiple versions from sharing a project with another person. Data Cleaning Workshop automatically generates a project name from the imported file, or “clipboard” when you use <span class="menuItems">Clipboard</span> importing. Project names don’t have to be unique, so Data Cleaning Workshop will create many projects with the same name unless you intervene. 
 
 You can name a project when you create it or import it, and you can rename a project by opening it and clicking on the project name at the top of the screen. 
 
 ### Autosaving 
 
-OpenRefine saves all of your actions (everything you can see in the <span class="menuItems">Undo/Redo</span> panel). That includes flagging and starring rows.
+Data Cleaning Workshop [saves all of your actions](running#history-undoredo) (everything you can see in the <span class="menuItems">Undo/Redo</span> panel). That includes flagging and starring rows.
 
 It doesn’t, however, save your facets, filters, or any kind of view you may have in place while you work. This includes the number of rows showing, whether you are showing your data as rows or records, and any sorting or column collapsing you may have done. A good rule of thumb is: if it’s not showing in <span class="menuItems">Undo/Redo</span>, you will lose it when you leave the project workspace. 
 
@@ -181,4 +185,4 @@ Go to <span class="menuItems">Open Project</span> and find the project you want 
 
 ### Project files
 
-You can find all of your raw project files in your work directory. They will be named according to the unique Project ID that OpenRefine has assigned them, which you can find on the <span class="menuItems">Open Project</span> screen, under the “About” link for each project. 
+You can find all of your raw project files in your work directory. They will be named according to the unique “Project ID” that Data Cleaning Workshop has assigned them, which you can find on the <span class="menuItems">Open Project</span> screen, under the “About” link for each project. 
