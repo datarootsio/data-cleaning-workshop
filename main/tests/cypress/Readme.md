@@ -1,13 +1,6 @@
-# Data Cleaning Workshop test suite
+# Data Cleaning Workshop UI test suite
 
-## Install
+Please refer to the official Data Cleaning Workshop documentation
 
-```
-cd ./main/tests/e2e
-npm install
-```
-
-## Usage
-
--   Run Data Cleaning Workshop on a separate terminal
--   Open the Cypress test runner with `./node_modules/.bin/cypress open`
+-   [How to build tests and run](https://github.com/datarootsio/data-cleaning-workshop)
+-   [Functional tests](https://github.com/datarootsio/data-cleaning-workshop)
