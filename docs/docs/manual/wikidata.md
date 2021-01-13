@@ -10,7 +10,7 @@ Data Cleaning Workshop provides powerful ways to both pull data from Wikidata an
 
 You do not need a Wikidata account to reconcile your local OpenRefine project to Wikidata. If you wish to [upload your cleaned dataset to Wikidata](#editing-wikidata-with-openrefine), you will need an [autoconfirmed](https://www.wikidata.org/wiki/Wikidata:Autoconfirmed_users) account, and you must [authorize OpenRefine with that account](#manage-wikidata-account). 
 
-:::info
+:::info A better resource
 The best source for information about how Data Cleaning Workshop works with Wikidata is [on Wikidata itself, under Tools](https://github.com/datarootsio/data-cleaning-workshop). That page has tutorials, guidelines on editing, and spaces for discussion and help. The following text on this page reviews the basics and can help you get set up, but the Wikidata help page is more regularly updated when technology or policies change. Links to the Wikidata help page are included throughout this page.
 :::
 
