@@ -392,31 +392,11 @@ You can change this when you run Data Cleaning Workshop from the terminal, by po
 
 ### Logs
 
-Data Cleaning Workshop does not currently output an error log, but because the Data Cleaning Workshop console window is always open while Data Cleaning Workshop runs in your browser, you can copy information from the console if an error occurs. 
+Data Cleaning Workshop does not currently output an error log, but because the Data Cleaning Workshop console window is always open (on Linux and Windows) while Data Cleaning Workshop runs in your browser, you can copy information from the console if an error occurs. 
 
-<Tabs
-  groupId="operating-systems"
-  defaultValue="win"
-  values={[
-    {label: 'Mac', value: 'mac'}
-  ]
-}>
-
-<TabItem value="mac">
-
-You can access Data Cleaning Workshop server logs from the terminal on Mac:
-
-*   Find the Data Cleaning Workshop app/icon in Finder
-*   control-click on the icon and select “Show Package Contents” from the context menu that displays
-*   This should open a new Finder menu showing a folder called “Contents” - navigate into this folder then into the “MacOS” folder
-*   control-click on “JavaAppLauncher”
-*   Choose “Open With” from the menu, and select “Terminal”
+Using a Mac, you can [run Data Cleaning Workshop using the terminal](running#starting-and-exiting) in order to capture errors.
 
 ---
-
-</TabItem>
-
-</Tabs>
 
 ## Increasing memory allocation
 

@@ -56,7 +56,14 @@ To exit Data Cleaning Workshop, close all the browser tabs or windows, then navi
 
 <TabItem value="mac">
 
-You can find Data Cleaning Workshop in your Applications folder, or you can call it from the command line with `./refine`. 
+You can find Data Cleaning Workshop in your Applications folder, or you can open it using Terminal. 
+
+To run Data Cleaning Workshop using Terminal:
+*   Find the Data Cleaning Workshop application / icon in Finder
+*   Control-click on the icon and select “Show Package Contents” from the context menu
+*   This should open a new Finder menu: navigate into the “MacOS” folder
+*   Control-click on “JavaAppLauncher”
+*   Choose “Open With” from the menu, and select “Terminal.”
 
 To exit, close all your Data Cleaning Workshop browser tabs, go back to the terminal window and press `Command` and `Q` to close it down.
 
@@ -416,7 +423,7 @@ You can preserve your facets and filters for future use by copying a <span class
 
 ### History (Undo/Redo)
 
-In Data Cleaning Workshop, any activity that changes the data can be undone. Changes are tracked from the very beginning, when a project is first created. The change history of each project is saved with the project's data, so quitting Data Cleaning Workshop does not erase the steps you've taken. When you restart Data Cleaning Workshop, you can view and undo changes that you made before you quit Data Cleaning Workshop. 
+In Data Cleaning Workshop, any activity that changes the data can be undone. Changes are tracked from the very beginning, when a project is first created. The change history of each project is saved with the project's data, so quitting Data Cleaning Workshop does not erase the steps you've taken. When you restart Data Cleaning Workshop, you can view and undo changes that you made before you quit Data Cleaning Workshop. Data Cleaning Workshop [autosaves](starting#autosaving) your actions every five minutes by default, and when you close Data Cleaning Workshop properly (using Ctrl + C). You can [change this interval](running#jvm-preferences).
 
 Project history gets saved when you export a project archive, and restored when you import that archive to a new installation of Data Cleaning Workshop. 
 
@@ -453,10 +460,14 @@ Not all operations can be extracted. Edits to a single cell, for example, can’
 
 ## Advanced Data Cleaning Workshop uses
 
+### Running Data Cleaning Workshop's Linux version on a Mac
+
+You can run Data Cleaning Workshop from the command line in Mac by using the Linux installation package. We do not promise support for this method. Follow the instructions in the Linux section.
+
 ### Running as a server
 
 :::caution
-Please note that exposing an Data Cleaning Workshop instance to the Internet is dangerous, as it gives anyone the ability to read and modify your projects and run arbitrary code on your computer. Data Cleaning Workshop should at least be protected by an authenticating proxy.
+Please note that if your machine has an external IP (is exposed to the Internet), you should not do this, or should protect it behind a proxy or firewall, such as nginx. Proceed at your own risk.
 :::
 
 By default (and for security reasons), Data Cleaning Workshop only listens to TCP requests coming from localhost (127.0.0.1) on port 3333. If you want to share your Data Cleaning Workshop instance with colleagues and respond to TCP requests to any IP address of the machine, start it from the command line like this:
