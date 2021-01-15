@@ -1,10 +1,25 @@
 ---
 slug: /
 id: index
-title: Data Cleaning Workshop product reference
-sidebar_label: Index
+title: Data Cleaning Workshop user manual
+sidebar_label: Introduction
 ---
 
-This site is just a prototype to propose a basic publishing infrastructure for Data Cleaning Workshop's new product reference.
 
-The structure on the left hand side is just a placeholder, as are the contents of all pages.
+This manual is designed to comprehensively walk through every aspect of setting up and using Data Cleaning Workshop 3.4.1, including every interface function and feature. 
+
+<!-- 
+This documentation platform provides a separate version of the user manual for each version of Data Cleaning Workshop (from 3.4.1 onwards) - if you're looking for a later version than 3.4.1, please select the correct version from the dropdown menu in the top bar of this page. 
+-->
+
+This user manual starts with instructions for [installing or upgrading Data Cleaning Workshop on Windows, Mac, and Linux computers](installing). It then walks you through [the interface and how to run Data Cleaning Workshop](running#jvm-preferences) from a program or command line, with or without setting custom preferences and modifications.
+
+The manual then teaches you how to [start a project](starting) by importing an existing dataset. We work through how to [view and learn about your data](exploring) using facets, filters, and sorting. 
+
+Then we launch into [transforming that data permanently](transforming) through common and custom transformations, clustering, pulling data from the web, [reconciling](reconciling), and [writing expressions](expressions). 
+
+Finally we discuss what to do with your improved dataset, whether [exporting](exporting) it to a file or uploading statements to Wikidata. 
+
+If you're stuck on any aspect and can't find an answer in the manual, try the [Troubleshooting page](troubleshooting) for links to various places to find help. 
+
+If you are new and want to learn how to use Data Cleaning Workshop using an example dataset, you may wish to start with a user-contributed tutorial from our [recommendations list](https://github.com/datarootsio/data-cleaning-workshop).
