@@ -36,6 +36,7 @@ Contact us
 ----------
 * [Mailing List](https://github.com/datarootsio/data-cleaning-workshop)
 * [Twitter](https://github.com/datarootsio/data-cleaning-workshop)
+* [Matrix/Element/Gitter chat](https://github.com/datarootsio/data-cleaning-workshop)
 
 Licensing and legal issues
 --------------------------
