@@ -23,7 +23,7 @@ If you don’t find your problem and solution there, continue on to the resource
 
 ### If you want to contribute:
 *   [Help us translate the tool into more languages](https://github.com/datarootsio/data-cleaning-workshop), using Weblate
-*   [We have a guide to contributing](https://github.com/datarootsio/data-cleaning-workshop) in the Technical Reference(technical-reference/technical-reference-index) section
+*   [We have a guide to contributing](technical-reference/contributing) in the [Technical Reference](technical-reference/technical-reference-index) section
 *   Contribute your feature requests in the [User forum](https://github.com/datarootsio/data-cleaning-workshop) or as [Github issues](https://github.com/datarootsio/data-cleaning-workshop)
 *   Join the User Forum and/or the [Developer Forum](https://github.com/datarootsio/data-cleaning-workshop)
 *   Share your successes and use cases with us, in the User forum
