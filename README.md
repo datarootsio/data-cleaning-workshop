@@ -22,7 +22,7 @@ This requires JDK 8 and Apache Maven.
 
 Documentation and Videos
 -------------------------
-* [Documentation Wiki](https://github.com/datarootsio/data-cleaning-workshop)
+* [User Manual](https://github.com/datarootsio/data-cleaning-workshop)
 * [FAQ](https://github.com/datarootsio/data-cleaning-workshop)
 * [Official Website and tutorial videos](https://github.com/datarootsio/data-cleaning-workshop)
 
