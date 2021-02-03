@@ -4,19 +4,23 @@ title: Installing Data Cleaning Workshop
 sidebar_label: Installing
 ---
 
-## System requirements 
+## System requirements
 
-Data Cleaning Workshop does not require internet access to run its basic functions. Once you download and install it, it runs as a small web server on your own computer, and you access that local web server by using your browser. It only requires an internet connection to import data from the web, reconcile data using a web service, or export data to the web. 
+Data Cleaning Workshop does not require internet access to run its basic functions. Once you download and install it, it runs as a small web server on your own computer, and you access that local web server by using your browser. It only requires an internet connection to import data from the web, reconcile data using a web service, or export data to the web.
 
 Data Cleaning Workshop requires three things on your computer in order to function:
 
 #### Compatible operating system
 
-Data Cleaning Workshop is designed to work with **Windows**, **Mac**, and **Linux** operating systems. [Our team releases packages for each](https://github.com/datarootsio/data-cleaning-workshop). 
+Data Cleaning Workshop is designed to work with **Windows**, **Mac**, and **Linux** operating systems. [Our team releases packages for each](https://github.com/datarootsio/data-cleaning-workshop).
 
-#### Java 
+#### Java
 
-Java Development Kit (JDK) must be installed and configured on your computer to run Data Cleaning Workshop. The Mac version of Data Cleaning Workshop includes JDK; new in Data Cleaning Workshop 3.4, there is also a Windows package with JDK included. To install JDK separately, [installation and upgrade instructions are below](#install-or-upgrade-java).
+[Java](https://java.com/en/download/) must be installed and configured on your computer to run Data Cleaning Workshop. The Mac version of Data Cleaning Workshop includes Java; new in Data Cleaning Workshop 3.4, there is also a Windows package with Java included.
+
+If you install and start Data Cleaning Workshop on a Windows computer without Java, it will automatically open up a browser window to the [Java downloads page](https://java.com/en/download/), and you can simply follow the instructions there.
+
+We recommend you [download](https://java.com/en/download/) and install Java before proceeding with the Data Cleaning Workshop installation.
 
 #### Compatible browser
 
@@ -31,21 +35,21 @@ We are aware of some minor rendering and performance issues on other browsers su
 
 ### Release versions
 
-Data Cleaning Workshop always has a [latest stable release](https://github.com/datarootsio/data-cleaning-workshop), as well as some more recent developments available in beta, release candidate, or [snapshot releases](https://github.com/datarootsio/data-cleaning-workshop). If you are installing for the first time, we recommend [the latest stable release](https://github.com/datarootsio/data-cleaning-workshop). 
+Data Cleaning Workshop always has a [latest stable release](https://github.com/datarootsio/data-cleaning-workshop), as well as some more recent developments available in beta, release candidate, or [snapshot releases](https://github.com/datarootsio/data-cleaning-workshop). If you are installing for the first time, we recommend [the latest stable release](https://github.com/datarootsio/data-cleaning-workshop).
 
 If you wish to use an extension that is only compatible with an earlier version of Data Cleaning Workshop, and do not require the latest features, you may find that [an older stable version is best for you](https://github.com/datarootsio/data-cleaning-workshop) in our list of releases. Look at later releases to see which security vulnerabilities are being fixed, in order to assess your own risk tolerance for using earlier versions. Look for “final release” versions instead of “beta” or “release candidate” versions.
 
 #### Unstable versions
 
-If you need a recently developed function, and are willing to risk some untested code, you can look at [the most recent items in the list](https://github.com/datarootsio/data-cleaning-workshop) and see what changes appeal to you. 
+If you need a recently developed function, and are willing to risk some untested code, you can look at [the most recent items in the list](https://github.com/datarootsio/data-cleaning-workshop) and see what changes appeal to you.
 
 “Beta” and “release candidate” versions may both have unreported bugs and are most suitable for people who are willing to help us troubleshoot these versions by [creating bug reports](https://github.com/datarootsio/data-cleaning-workshop).  
 
-For the absolute latest development updates, see the [snapshot releases](https://github.com/datarootsio/data-cleaning-workshop). These are created with every commit. 
+For the absolute latest development updates, see the [snapshot releases](https://github.com/datarootsio/data-cleaning-workshop). These are created with every commit.
 
-#### What’s changed 
+#### What’s changed
 
-Our [latest version is Data Cleaning Workshop 3.4.1](https://github.com/datarootsio/data-cleaning-workshop), released September 24th 2020. The major changes in this version are listed on the [3.4.1 release page](https://github.com/datarootsio/data-cleaning-workshop) with the downloadable packages. 
+Our [latest version is Data Cleaning Workshop 3.4.1](https://github.com/datarootsio/data-cleaning-workshop), released September 24th 2020. The major changes in this version are listed on the [3.4.1 release page](https://github.com/datarootsio/data-cleaning-workshop) with the downloadable packages.
 
 You can find information about all Data Cleaning Workshop versions on the [Releases page on Github](https://github.com/datarootsio/data-cleaning-workshop).
 
@@ -58,138 +62,17 @@ Data Cleaning Workshop may also work in other environments, such as [Chromebooks
 
 If you are upgrading from an older version of Data Cleaning Workshop and have projects already on your computer, you should create backups of those projects before you install a new version.
 
-First, [locate your workspace directory](#where-is-data-stored). Then copy everything you find there and paste it into a folder elsewhere on your computer. 
+First, [locate your workspace directory](#where-is-data-stored). Then copy everything you find there and paste it into a folder elsewhere on your computer.
 
-For extra security you can [export your existing Data Cleaning Workshop projects](exporting#export-a-project). 
+For extra security you can [export your existing Data Cleaning Workshop projects](exporting#export-a-project).
 
 :::caution
-Take note of the [extensions](#installing-extensions) you have currently installed. They may not be compatible with the upgraded version of Data Cleaning Workshop. Installations can be installed in two places, so be sure to check both your workspace directory and the existing installation directory. 
+Take note of the [extensions](#installing-extensions) you have currently installed. They may not be compatible with the upgraded version of Data Cleaning Workshop. Installations can be installed in two places, so be sure to check both your workspace directory and the existing installation directory.
 :::
-
-### Install or upgrade Java
-
-[Java Development Kit (JDK)](https://jdk.java.net/) is required to run Data Cleaning Workshop and should be installed first. [Data Cleaning Workshop installation packages for Mac and Windows come bundled with JDK](https://github.com/datarootsio/data-cleaning-workshop), so you do not need to install it separately if you use those bundles. 
-
-There are JDK packages for Mac, Windows, and Linux. We recommend you install the latest “Ready for use” version. At the time of writing, this is [JDK 14.0.1](https://jdk.java.net/14/). 
-
-Download the archive (either a `.tar.gz` or a `.zip`) to your computer and then extract its contents to a location of your choice. There is no installation process, so you may wish to extract this folder directly into a place where you put program files, or another stable folder. 
-
-Once you have Java extracted onto your system, you need to tell your computer where to find it when Data Cleaning Workshop looks for it.  
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-<Tabs
-  groupId="operating-systems"
-  defaultValue="win"
-  values={[
-    {label: 'Windows', value: 'win'},
-    {label: 'Mac', value: 'mac'},
-    {label: 'Linux', value: 'linux'}
-  ]
-}>
-
-<TabItem value="win">
-
-1. On Windows 10, click the Start Menu button, type `env`, and look at the search results. Click <span class="buttonLabels">Edit the system environment variables</span>. (If you are using an earlier version of Windows, use the “Search” or “Search programs and files” box in the Start Menu.)
-
-![A screenshot of the search results for 'env'.](/img/env.png "A screenshot of the search results for 'env'.")
-
-2. Click <span class="buttonLabels">Environment Variables…</span> at the bottom of the <span class="tabLabels">Advanced</span> window.
-3. In the <span class="tabLabels">Environment Variables</span> window that appears, click <span class="buttonLabels">New…</span> and create a variable with the key `JAVA_HOME`. You can set the variable for only your user account, as in the screenshot below, or set it as a system variable - it will work either way.
-
-![A screenshot of 'Environment Variables'.](/img/javahome.png "A screenshot of 'Environment Variables'.")
-
-4. Set the `Value` to the folder where you installed JDK, in the format `D:\Programs\OpenJDK`. You can locate this folder with the <span class="buttonLabels">Browse directory...</span> button.
-
-</TabItem>
-
-<TabItem value="mac">
-
-First, find where Java is on your computer with this command:
-
-```
-which java
-```
-
-Check the environment variable `JAVA_HOME` with:
-
-```
-$JAVA_HOME/bin/java --version
-```
-
-To set the environment variable for the current Java version of your MacOS:
-
-```
-export JAVA_HOME="$(/usr/libexec/java_home)"
-```
-
-Or, for Java 13.x:
-
-```
-export JAVA_HOME="$(/usr/libexec/java_home -v 13)"
-```
-
-</TabItem>
-
-<TabItem value="linux">
-
-##### With the terminal
-
-Enter the following:
-
-```
-sudo apt install default-jre
-```
-
-This probably won’t install the latest JDK package available on the Java website, but it is faster and more straightforward. (At the time of writing, it installs OpenJDK 11.0.7.)
-
-##### Manually
-
-First, [extract the JDK package](https://openjdk.java.net/install/) to the new directory `usr/lib/jvm`:
-
-```
-sudo mkdir -p /usr/lib/jvm
-sudo tar -x -C /usr/lib/jvm -f /tmp/openjdk-14.0.1_linux-x64_bin.tar.gz
-```
-
-Then, navigate to this folder and confirm the final path (in this case, `usr/lib/jvm/jdk-14.0.1`. Open a terminal and type
-
-```
-sudo gedit /etc/profile
-```
-
-In the text window that opens, insert the following lines at the end of the `profile` file, using the path above:
-
-```
-JAVA_HOME=/usr/lib/jvm/jdk-14.0.1
-PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
-export JAVA_HOME
-export PATH
-```
-
-Save and close the file. When you are back in the terminal, type
-
-```
-source /etc/environment
-```
-
-Exit the terminal and restart your system. You can then check that `JAVA_HOME` is set properly by opening another terminal and typing
-```
-echo $JAVA_HOME
-```
-
-It should show the path you set above. 
-
-</TabItem>
-
-</Tabs>
-
----
 
 ### Install or upgrade Data Cleaning Workshop
 
-If you are upgrading an existing Data Cleaning Workshop installation, you can delete the old program files and install the new files into the same space. Do not overwrite the files as some obsolete files may be left over unnecessarily. 
+If you are upgrading an existing Data Cleaning Workshop installation, you can delete the old program files and install the new files into the same space. Do not overwrite the files as some obsolete files may be left over unnecessarily.
 
 :::caution
 If you have extensions installed, do not delete the `webapp\extensions` folder where you installed them. You may wish to install extensions into the workspace directory instead of the program directory. There is no guarantee that extensions will be forward-compatible with new versions of Data Cleaning Workshop, and we do not maintain extensions.
@@ -208,15 +91,15 @@ If you have extensions installed, do not delete the `webapp\extensions` folder w
 
 <TabItem value="win">
 
-Once you have downloaded the `.zip` file, extract it into a folder where you wish to store program files (such as `D:\Program Files\OpenRefine`). 
+Once you have downloaded the `.zip` file, extract it into a folder where you wish to store program files (such as `D:\Program Files\OpenRefine`).
 
-You can right-click on `openrefine.exe` or `refine.bat` and pin one of those programs to your Start Menu or create shortcuts for easier access. 
+You can right-click on `openrefine.exe` or `refine.bat` and pin one of those programs to your Start Menu or create shortcuts for easier access.
 
 </TabItem>
 
 <TabItem value="mac">
 
-Once you have downloaded the `.dmg` file, open it and drag the Data Cleaning Workshop icon onto the Applications folder icon (just like you would normally install Mac applications). 
+Once you have downloaded the `.dmg` file, open it and drag the Data Cleaning Workshop icon onto the Applications folder icon (just like you would normally install Mac applications).
 
 </TabItem>
 
@@ -351,7 +234,7 @@ If your folder path has spaces, use neutral quotation marks around it:
 -Drefine.data_dir="D:\My Desired Folder"
 ```
 
-If the folder does not exist, Data Cleaning Workshop will create it. 
+If the folder does not exist, Data Cleaning Workshop will create it.
 
 </TabItem>
 
@@ -364,7 +247,7 @@ If the folder does not exist, Data Cleaning Workshop will create it.
 For older versions, as Data Cleaning Workshop:
 
 ```
-~/Library/Application Support/Google/Refine/ 
+~/Library/Application Support/Google/Refine/
 ```
 
 Logging is to `/var/log/daemon.log` - grep for `com.google.refine.Refine`.
@@ -392,7 +275,7 @@ You can change this when you run Data Cleaning Workshop from the terminal, by po
 
 ### Logs
 
-Data Cleaning Workshop does not currently output an error log, but because the Data Cleaning Workshop console window is always open (on Linux and Windows) while Data Cleaning Workshop runs in your browser, you can copy information from the console if an error occurs. 
+Data Cleaning Workshop does not currently output an error log, but because the Data Cleaning Workshop console window is always open (on Linux and Windows) while Data Cleaning Workshop runs in your browser, you can copy information from the console if an error occurs.
 
 Using a Mac, you can [run Data Cleaning Workshop using the terminal](running#starting-and-exiting) in order to capture errors.
 
@@ -405,7 +288,7 @@ Data Cleaning Workshop relies on having computer memory available to it to work 
 *   an input file size of more than 50 megabytes (MB)
 *   more than 50 [rows per record in records mode](running#records-mode)
 
-By default Data Cleaning Workshop is set to operate with 1 gigabyte (GB) of memory (1024MB). If you feel that Data Cleaning Workshop is running slowly, or you are getting “out of memory” errors (for example, `java.lang.OutOfMemoryError`), you can try allocating more memory. 
+By default Data Cleaning Workshop is set to operate with 1 gigabyte (GB) of memory (1024MB). If you feel that Data Cleaning Workshop is running slowly, or you are getting “out of memory” errors (for example, `java.lang.OutOfMemoryError`), you can try allocating more memory.
 
 A good practice is to start with no more than 50% of whatever memory is left over after the estimated usage of your operating system, to leave memory for your browser to run.
 
@@ -436,7 +319,7 @@ If you run `openrefine.exe`, you will need to edit the `openrefine.l4j.ini` file
 -Xmx1024M
 ```
 
-The line “-Xmx1024M” defines the amount of memory available in megabytes. Change the number “1024” - for example, edit the line to “-Xmx2048M” to make 2048MB [2GB] of memory available. 
+The line “-Xmx1024M” defines the amount of memory available in megabytes. Change the number “1024” - for example, edit the line to “-Xmx2048M” to make 2048MB [2GB] of memory available.
 
 :::caution openrefine.exe not running?
 Once you increase the memory allocation, you may find that you cannot run `openrefine.exe`. In this case, your computer needs a 64-bit version of [Java](https://www.java.com/en/download/help/index_installing.xml) (this is different from [Java JDK](#install-or-upgrade-java). Look for the “Windows Offline (64-bit)” download on the Downloads page and install that. Your system must also be set to use the 64-bit version of Java by [changing the Java configuration](https://www.java.com/en/download/help/update_runtime_settings.xml).
@@ -452,7 +335,7 @@ To set the maximum amount of memory on the command line when using `refine.bat`,
 
 where “2048” is the maximum amount of MB that you want OpenRefine to use.
 
-To change the default that `refine.bat` uses, edit the `refine.ini` line that reads 
+To change the default that `refine.bat` uses, edit the `refine.ini` line that reads
 
 ```REFINE_MEMORY=1024M```
 
@@ -497,7 +380,7 @@ Make sure it is not commented out (that is, that the line doesn't start with a �
 
 ## Installing extensions
 
-Extensions have been created by our contributor community to add functionality or provide convenient shortcuts for common uses of OpenRefine. [We list extensions we know about on our downloads page](https://openrefine.org/download.html). 
+Extensions have been created by our contributor community to add functionality or provide convenient shortcuts for common uses of OpenRefine. [We list extensions we know about on our downloads page](https://openrefine.org/download.html).
 
 :::info Contributing extensions
 If you’d like to create or modify an extension, [see our developer documentation here](https://github.com/datarootsio/data-cleaning-workshop). If you’re having a problem, [use our downloads page](https://github.com/datarootsio/data-cleaning-workshop) to go to the extension’s page and report the issue there.
@@ -507,17 +390,17 @@ If you’d like to create or modify an extension, [see our developer documentati
 
 You can [install extensions in one of two places](#set-where-data-is-stored):
 
-*   Into your Data Cleaning Workshop program folder, so they will only be available to that version/installation of Data Cleaning Workshop (meaning the extension will not run if you upgrade Data Cleaning Workshop), or 
+*   Into your Data Cleaning Workshop program folder, so they will only be available to that version/installation of Data Cleaning Workshop (meaning the extension will not run if you upgrade Data Cleaning Workshop), or
 *   Into your workspace, where your projects are stored, so they will be available no matter which version of Data Cleaning Workshop you’re using.
 
-We provide these options because you may wish to reinstall a given extension manually each time you upgrade Data Cleaning Workshop, in order to be sure it works properly. 
+We provide these options because you may wish to reinstall a given extension manually each time you upgrade Data Cleaning Workshop, in order to be sure it works properly.
 
 ### Find the right place to install
 
-If you want to install the extension into the program folder, go to your program directory and then go to `webapp\extensions` (or create it if not does not exist). 
+If you want to install the extension into the program folder, go to your program directory and then go to `webapp\extensions` (or create it if not does not exist).
 
 If you want to install the extension into your workspace, you can:
-*   launch Data Cleaning Workshop and click <span class="menuItems">Open Project</span> in the sidebar 
+*   launch Data Cleaning Workshop and click <span class="menuItems">Open Project</span> in the sidebar
 *   At the bottom of the screen, click <span class="menuItems">Browse workspace directory</span>
 *   A file-explorer or finder window will open in your workspace
 *   Create a new folder called “extensions” inside the workspace if it does not exist.
@@ -526,7 +409,7 @@ You can also [find your workspace on each operating system using these instructi
 
 ### Install the extension
 
-Some extensions have their own instructions: make sure you read the documentation before you begin installing. 
+Some extensions have their own instructions: make sure you read the documentation before you begin installing.
 
 Some extensions may have multiple versions, to match Data Cleaning Workshop versions, so be sure to choose the right release for your installation. If you have questions about compatibility or want to request or voice your support for an update, [use our downloads page](https://github.com/datarootsio/data-cleaning-workshop) to go to the extension’s page and report the issue there.
 
@@ -536,4 +419,4 @@ Generally, the installation process will be:
 *   Extract the zip contents into the “extensions” directory, making sure all the contents go into one folder with the name of the extension
 *   Start (or restart) Data Cleaning Workshop.
 
-To confirm that installation was a success, follow the instructions provided by the extension. Each extension will appear in its own way inside the Data Cleaning Workshop interface. Make sure you read its documentation to know where the functionality will appear, such as under specific dropdown menus. 
+To confirm that installation was a success, follow the instructions provided by the extension. Each extension will appear in its own way inside the Data Cleaning Workshop interface. Make sure you read its documentation to know where the functionality will appear, such as under specific dropdown menus.
