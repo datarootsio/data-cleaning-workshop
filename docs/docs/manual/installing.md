@@ -4,17 +4,17 @@ title: Installing Data Cleaning Workshop
 sidebar_label: Installing
 ---
 
-## System requirements
+## System requirements {#system-requirements}
 
 Data Cleaning Workshop does not require internet access to run its basic functions. Once you download and install it, it runs as a small web server on your own computer, and you access that local web server by using your browser. It only requires an internet connection to import data from the web, reconcile data using a web service, or export data to the web.
 
 Data Cleaning Workshop requires three things on your computer in order to function:
 
-#### Compatible operating system
+#### Compatible operating system {#compatible-operating-system}
 
 Data Cleaning Workshop is designed to work with **Windows**, **Mac**, and **Linux** operating systems. [Our team releases packages for each](https://github.com/datarootsio/data-cleaning-workshop).
 
-#### Java
+#### Java {#java}
 
 [Java](https://java.com/en/download/) must be installed and configured on your computer to run Data Cleaning Workshop. The Mac version of Data Cleaning Workshop includes Java; new in Data Cleaning Workshop 3.4, there is also a Windows package with Java included.
 
@@ -22,7 +22,7 @@ If you install and start Data Cleaning Workshop on a Windows computer without Ja
 
 We recommend you [download](https://java.com/en/download/) and install Java before proceeding with the Data Cleaning Workshop installation.
 
-#### Compatible browser
+#### Compatible browser {#compatible-browser}
 
 OpenRefine works best on browsers based on Webkit, such as:
 
@@ -33,13 +33,13 @@ OpenRefine works best on browsers based on Webkit, such as:
 
 We are aware of some minor rendering and performance issues on other browsers such as Firefox. We don't support Internet Explorer. If you are having issues running Data Cleaning Workshop, see the [section on Running](running.md#troubleshooting).
 
-### Release versions
+### Release versions {#release-versions}
 
 Data Cleaning Workshop always has a [latest stable release](https://github.com/datarootsio/data-cleaning-workshop), as well as some more recent developments available in beta, release candidate, or [snapshot releases](https://github.com/datarootsio/data-cleaning-workshop). If you are installing for the first time, we recommend [the latest stable release](https://github.com/datarootsio/data-cleaning-workshop).
 
 If you wish to use an extension that is only compatible with an earlier version of Data Cleaning Workshop, and do not require the latest features, you may find that [an older stable version is best for you](https://github.com/datarootsio/data-cleaning-workshop) in our list of releases. Look at later releases to see which security vulnerabilities are being fixed, in order to assess your own risk tolerance for using earlier versions. Look for “final release” versions instead of “beta” or “release candidate” versions.
 
-#### Unstable versions
+#### Unstable versions {#unstable-versions}
 
 If you need a recently developed function, and are willing to risk some untested code, you can look at [the most recent items in the list](https://github.com/datarootsio/data-cleaning-workshop) and see what changes appeal to you.
 
@@ -47,7 +47,7 @@ If you need a recently developed function, and are willing to risk some untested
 
 For the absolute latest development updates, see the [snapshot releases](https://github.com/datarootsio/data-cleaning-workshop). These are created with every commit.
 
-#### What’s changed
+#### What’s changed {#whats-changed}
 
 Our [latest version is Data Cleaning Workshop 3.4.1](https://github.com/datarootsio/data-cleaning-workshop), released September 24th 2020. The major changes in this version are listed on the [3.4.1 release page](https://github.com/datarootsio/data-cleaning-workshop) with the downloadable packages.
 
@@ -57,8 +57,8 @@ You can find information about all Data Cleaning Workshop versions on the [Relea
 Data Cleaning Workshop may also work in other environments, such as [Chromebooks](https://gist.github.com/organisciak/3e12e5138e44a2fed75240f4a4985b4f) where Linux terminals are available. Look at our list of [Other Distributions on the Downloads page](https://github.com/datarootsio/data-cleaning-workshop) for other ways of running Data Cleaning Workshop, and refer to our contributor community to see new environments in development.
 :::
 
-## Installing or upgrading
-### Back up your data
+## Installing or upgrading {#installing-or-upgrading}
+### Back up your data {#back-up-your-data}
 
 If you are upgrading from an older version of Data Cleaning Workshop and have projects already on your computer, you should create backups of those projects before you install a new version.
 
@@ -70,7 +70,7 @@ For extra security you can [export your existing Data Cleaning Workshop projects
 Take note of the [extensions](#installing-extensions) you have currently installed. They may not be compatible with the upgraded version of Data Cleaning Workshop. Installations can be installed in two places, so be sure to check both your workspace directory and the existing installation directory.
 :::
 
-### Install or upgrade Data Cleaning Workshop
+### Install or upgrade Data Cleaning Workshop {#install-or-upgrade-openrefine}
 
 If you are upgrading an existing Data Cleaning Workshop installation, you can delete the old program files and install the new files into the same space. Do not overwrite the files as some obsolete files may be left over unnecessarily.
 
@@ -118,7 +118,7 @@ The long version:
 
 [Homebrew](http://brew.sh) is a popular command-line package manager for Mac. Installing Homebrew is accomplished by pasting the installation command on the Homebrew website into a Terminal window. Once Homebrew is installed, applications like Data Cleaning Workshop can be installed via a simple command. You can [install Homebrew from their website](http://brew.sh).
 
-###### Install
+###### Install {#install}
 
 Install Data Cleaning Workshop with this command:
 
@@ -141,7 +141,7 @@ Behind the scenes, this command causes Homebrew to download the Data Cleaning Wo
 
 If an existing `OpenRefine.app` is found in the Applications folder, Homebrew will not overwrite it, so installing via Homebrew requires either deleting or renaming previously installed copies.
 
-###### Uninstall
+###### Uninstall {#uninstall}
 
 To uninstall Data Cleaning Workshop, paste this command into the Terminal:
 
@@ -155,7 +155,7 @@ You should see output like this:
  ==> Removing App '/Applications/OpenRefine.app'.
 ```
 
-###### Update
+###### Update {#update}
 
 To update to the latest version of Data Cleaning Workshop, paste this command into the Terminal:
 
@@ -197,7 +197,7 @@ tar xzf openrefine-linux-3.4.tar.gz
 ---
 
 
-### Set where data is stored
+### Set where data is stored {#set-where-data-is-stored}
 
 Data Cleaning Workshop stores data in two places: program files in the program directory, wherever it is you’ve installed it; and project files in what we call the “workspace directory.” You can access this folder easily from Data Cleaning Workshop by going to the [home screen](running#the-home-screen) (at [http://127.0.0.1:3333/](http://127.0.0.1:3333/)) and clicking <span class="buttonLabels">Browse workspace directory</span>.
 
@@ -276,7 +276,7 @@ You can change this when you run Data Cleaning Workshop from the terminal, by po
 ---
 
 
-### Logs
+### Logs {#logs}
 
 Data Cleaning Workshop does not currently output an error log, but because the Data Cleaning Workshop console window is always open (on Linux and Windows) while Data Cleaning Workshop runs in your browser, you can copy information from the console if an error occurs.
 
@@ -284,7 +284,7 @@ Using a Mac, you can [run Data Cleaning Workshop using the terminal](running#sta
 
 ---
 
-## Increasing memory allocation
+## Increasing memory allocation {#increasing-memory-allocation}
 
 Data Cleaning Workshop relies on having computer memory available to it to work effectively. If you are planning to work with large datasets, you may wish to set up Data Cleaning Workshop to handle it at the outset. By “large” we generally mean one of the following indicators:
 *   more than one million total cells
@@ -313,7 +313,7 @@ If your project is big enough to need more than the default amount of memory, co
 
 <TabItem value="win">
 
-#### Using openrefine.exe
+#### Using openrefine.exe {#using-openrefineexe}
 
 If you run `openrefine.exe`, you will need to edit the `openrefine.l4j.ini` file found in the program directory and edit the line
 
@@ -328,7 +328,7 @@ The line “-Xmx1024M” defines the amount of memory available in megabytes. Ch
 Once you increase the memory allocation, you may find that you cannot run `openrefine.exe`. In this case, your computer needs a 64-bit version of [Java](https://www.java.com/en/download/help/index_installing.xml) (this is different from [Java JDK](#install-or-upgrade-java). Look for the “Windows Offline (64-bit)” download on the Downloads page and install that. Your system must also be set to use the 64-bit version of Java by [changing the Java configuration](https://www.java.com/en/download/help/update_runtime_settings.xml).
 :::
 
-#### Using refine.bat
+#### Using refine.bat {#using-refinebat}
 
 On Windows, Data Cleaning Workshop can also be run by using the file `refine.bat` in the program directory. If you start Data Cleaning Workshop using `refine.bat`, the memory available to Data Cleaning Workshop can be specified either through command line options, or through the `refine.ini` file.
 
@@ -364,7 +364,7 @@ If you have downloaded the `.dmg` package and you start Data Cleaning Workshop b
 If you have downloaded the `.tar.gz` package and you start Data Cleaning Workshop from the command line, add the “-m xxxxM” parameter like this:
 `./refine -m 2048m`
 
-#### Setting a default
+#### Setting a default {#setting-a-default}
 
 If you don't want to set this option on the command line each time, you can also set it in the `refine.ini` file. Edit the line
 
@@ -381,7 +381,7 @@ Make sure it is not commented out (that is, that the line doesn't start with a �
 ---
 
 
-## Installing extensions
+## Installing extensions {#installing-extensions}
 
 Extensions have been created by our contributor community to add functionality or provide convenient shortcuts for common uses of OpenRefine. [We list extensions we know about on our downloads page](https://openrefine.org/download.html).
 
@@ -389,7 +389,7 @@ Extensions have been created by our contributor community to add functionality o
 If you’d like to create or modify an extension, [see our developer documentation here](https://github.com/datarootsio/data-cleaning-workshop). If you’re having a problem, [use our downloads page](https://github.com/datarootsio/data-cleaning-workshop) to go to the extension’s page and report the issue there.
 :::
 
-### Two ways to install extensions
+### Two ways to install extensions {#two-ways-to-install-extensions}
 
 You can [install extensions in one of two places](#set-where-data-is-stored):
 
@@ -398,7 +398,7 @@ You can [install extensions in one of two places](#set-where-data-is-stored):
 
 We provide these options because you may wish to reinstall a given extension manually each time you upgrade Data Cleaning Workshop, in order to be sure it works properly.
 
-### Find the right place to install
+### Find the right place to install {#find-the-right-place-to-install}
 
 If you want to install the extension into the program folder, go to your program directory and then go to `webapp\extensions` (or create it if not does not exist).
 
@@ -410,7 +410,7 @@ If you want to install the extension into your workspace, you can:
 
 You can also [find your workspace on each operating system using these instructions](#set-where-data-is-stored).  
 
-### Install the extension
+### Install the extension {#install-the-extension}
 
 Some extensions have their own instructions: make sure you read the documentation before you begin installing.
 
