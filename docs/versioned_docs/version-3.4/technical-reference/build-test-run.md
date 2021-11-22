@@ -9,7 +9,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 You will need:
 * [Data Cleaning Workshop source code](https://github.com/datarootsio/data-cleaning-workshop)
-* [Java JDK](http://java.sun.com/javase/downloads/index.jsp) (Get [OpenJDK from here](https://jdk.java.net/15/).)
+* [Java JDK](http://java.sun.com/javase/downloads/index.jsp) (Get [OpenJDK from here](https://jdk.java.net/archive/). At the moment you cannot use JDK > 15, see [Issue on Github](https://github.com/datarootsio/data-cleaning-workshop).)
 * [Apache Maven](https://maven.apache.org)  (OPTIONAL)
 * A Unix/Linux shell environment OR the Windows command line
 
