@@ -19,7 +19,7 @@ To let your users contribute to your Wikibase instance with Data Cleaning Worksh
 
 ### Requirements {#requirements}
 
-To work with Data Cleaning Workshop, your Wikibase instance needs an associated reconciliation service. For instance you can use [a Python wrapper](https://github.com/datarootsio/data-cleaning-workshop) for this.
+To work with Data Cleaning Workshop, your Wikibase instance needs an associated reconciliation service. For instance you can use [a Python wrapper](https://github.com/datarootsio/data-cleaning-workshop) for this. Also, in addition to Wikibase, the [UniversalLanguageSelector extension](https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:UniversalLanguageSelector) should be installed.
 
 
 ### The format of the manifest {#the-format-of-the-manifest}
