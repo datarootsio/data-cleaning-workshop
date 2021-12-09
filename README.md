@@ -13,6 +13,13 @@ the web. All from a web browser and the comfort and privacy of your own computer
 
 * [Data Cleaning Workshop Releases](https://github.com/datarootsio/data-cleaning-workshop)
 
+## Snapshot releases
+
+Latest development version, packaged for:
+* [Linux](https://github.com/datarootsio/data-cleaning-workshop)
+* [Windows](https://github.com/datarootsio/data-cleaning-workshop)
+* [MacOS](https://github.com/datarootsio/data-cleaning-workshop)
+
 ## Run from source
 
 If you have cloned this repository to your computer, you can run Data Cleaning Workshop with:
