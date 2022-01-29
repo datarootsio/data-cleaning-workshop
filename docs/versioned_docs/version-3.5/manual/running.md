@@ -321,7 +321,7 @@ From the home screen, look in the options to the left for <span class="menuItems
 To leave the Language Settings screen, click on the diamond “Data Cleaning Workshop” logo.
 
 :::info Help us Translate Data Cleaning Workshop
-We use Weblate to provide translations for the interface. You can check [our profile on Weblate](https://github.com/datarootsio/data-cleaning-workshop) to see which languages are in the process of being supported. See [our technical reference if you are interested in contributing translation work](https://github.com/datarootsio/data-cleaning-workshop) to make Data Cleaning Workshop accessible to people in other languages.
+We use Weblate to provide translations for the interface. You can check [our profile on Weblate](https://github.com/datarootsio/data-cleaning-workshop) to see which languages are in the process of being supported. See [our technical reference if you are interested in contributing translation work](../technical-reference/translating-ui) to make Data Cleaning Workshop accessible to people in other languages.
 :::
 
 ### Preferences {#preferences}
