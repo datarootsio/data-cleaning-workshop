@@ -1,0 +1,6 @@
+Apple distribution certificates
+===============================
+
+Those certificates are used to code-sign Data Cleaning Workshop binaries.
+They are decoded in the CI using the embedded GPG key.
+
