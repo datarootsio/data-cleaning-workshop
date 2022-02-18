@@ -18,7 +18,8 @@ the web. All from a web browser and the comfort and privacy of your own computer
 Latest development version, packaged for:
 * [Linux](https://github.com/datarootsio/data-cleaning-workshop)
 * [MacOS](https://github.com/datarootsio/data-cleaning-workshop)
-* [Windows](https://github.com/datarootsio/data-cleaning-workshop)
+* [Windows without embedded JRE](https://github.com/datarootsio/data-cleaning-workshop)
+* [Windows with embedded JRE](https://github.com/datarootsio/data-cleaning-workshop)
 
 ## Run from source
 
