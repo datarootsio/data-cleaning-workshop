@@ -16,11 +16,11 @@ Data Cleaning Workshop is designed to work with **Windows**, **Mac**, and **Linu
 
 #### Java {#java}
 
-[Java](https://java.com/en/download/) must be installed and configured on your computer to run Data Cleaning Workshop. The Mac version of Data Cleaning Workshop includes Java; new in Data Cleaning Workshop 3.4, there is also a Windows package with Java included.
+Java must be installed and configured on your computer to run Data Cleaning Workshop. The Mac version of Data Cleaning Workshop includes Java; new in Data Cleaning Workshop 3.4, there is also a Windows package with Java included.
 
-If you install and start Data Cleaning Workshop on a Windows computer without Java, it will automatically open up a browser window to the [Java downloads page](https://java.com/en/download/), and you can simply follow the instructions there.
+If you want to install Java yourself, you can install a pre-built Java Runtime Environment (JRE) from  [Adoptium.net](https://adoptium.net/releases.html). Please note that Data Cleaning Workshop works with Java 11 to Java 17 for Data Cleaning Workshop 3.6.
 
-We recommend you [download](https://java.com/en/download/) and install Java before proceeding with the Data Cleaning Workshop installation. Please note that Data Cleaning Workshop 3.5 works with Java 8 to Java 17.
+If you install and start Data Cleaning Workshop on a Windows computer without Java, it will automatically open up a browser window to this page.
 
 #### Compatible browser {#compatible-browser}
 
