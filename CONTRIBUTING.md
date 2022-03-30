@@ -49,7 +49,7 @@ If you don't know where to start and are looking for a bug to fix, please see ou
 
 ### New functionalities via extensions
 
-Data Cleaning Workshop support a plugin architecture to extend its functionality. You can find more information on how to write extension on [our wiki](https://github.com/datarootsio/data-cleaning-workshop). Giuliano Tortoreto wrote a separate documentation detailing how to build an extension for Data Cleaning Workshop. A [LaTeX](https://github.com/datarootsio/data-cleaning-workshop) and [PDF version](https://github.com/datarootsio/data-cleaning-workshop) are available.
+Data Cleaning Workshop supports a plugin architecture to extend its functionality. You can find more information on how to write extension on [our wiki](https://github.com/datarootsio/data-cleaning-workshop). Giuliano Tortoreto wrote a separate documentation detailing how to build an extension for Data Cleaning Workshop. A [LaTeX](https://github.com/datarootsio/data-cleaning-workshop) and [PDF version](https://github.com/datarootsio/data-cleaning-workshop) are available.
 
 If you want to list your extension on the download page, please edit [this file](https://github.com/datarootsio/data-cleaning-workshop).
 
