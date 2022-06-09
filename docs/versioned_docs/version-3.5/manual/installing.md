@@ -47,16 +47,6 @@ If you need a recently developed function, and are willing to risk some untested
 
 For the absolute latest development updates, see the [snapshot releases](https://github.com/datarootsio/data-cleaning-workshop). These are created with every commit.
 
-#### What’s changed {#whats-changed}
-
-Our [latest version is Data Cleaning Workshop 3.5.2](https://github.com/datarootsio/data-cleaning-workshop), released January 26, 2022. The major changes in this version are listed on the [3.5.2 release page](https://github.com/datarootsio/data-cleaning-workshop) with the downloadable packages.
-
-You can find information about all Data Cleaning Workshop versions on the [Releases page on Github](https://github.com/datarootsio/data-cleaning-workshop).
-
-:::info Other distributions
-Data Cleaning Workshop may also work in other environments, such as [Chromebooks](https://gist.github.com/organisciak/3e12e5138e44a2fed75240f4a4985b4f) where Linux terminals are available. Look at our list of [Other Distributions on the Downloads page](https://github.com/datarootsio/data-cleaning-workshop) for other ways of running Data Cleaning Workshop, and refer to our contributor community to see new environments in development.
-:::
-
 ## Installing or upgrading {#installing-or-upgrading}
 ### Back up your data {#back-up-your-data}
 
