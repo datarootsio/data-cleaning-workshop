@@ -20,7 +20,7 @@ Data Cleaning Workshop is designed to work with **Windows**, **Mac**, and **Linu
 
 If you install and start Data Cleaning Workshop on a Windows computer without Java, it will automatically open up a browser window to the [Java downloads page](https://java.com/en/download/), and you can simply follow the instructions there.
 
-We recommend you [download](https://java.com/en/download/) and install Java before proceeding with the Data Cleaning Workshop installation. Please note that Data Cleaning Workshop works with Java 8 to Java 17 for Data Cleaning Workshop 3.5.
+We recommend you [download](https://adoptium.net/temurin/releases) and install Java before proceeding with the Data Cleaning Workshop installation. Please note that Data Cleaning Workshop works with Java 8 to Java 17 for Data Cleaning Workshop 3.5. More recent plugins for Data Cleaning Workshop require Java 17.
 
 #### Compatible browser {#compatible-browser}
 
