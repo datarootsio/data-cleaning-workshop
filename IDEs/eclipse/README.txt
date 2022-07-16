@@ -7,6 +7,9 @@
   developing Data Cleaning Workshop with Eclipse (http://www.eclipse.org/).
   
   
+  For general information on how to setup your Eclipse, please see Data Cleaning Workshop technical documentation at:
+  https://github.com/datarootsio/data-cleaning-workshop
+  
   
   Code Style Format Configurations (Refine.style.xml)
   ------------------------------------------------------
