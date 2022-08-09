@@ -62,6 +62,17 @@ Columns in the column model can be removed and re-ordered without changing the r
 
 ##### Column Groups {#column-groups}
 
+:::caution
+This feature is partially implemented, buggy and deprecated. It will be removed in Data Cleaning Workshop 4.0.
+See the following links for details:
+
+- [Issue#5122](https://github.com/datarootsio/data-cleaning-workshop) that first argues it's a useful feature, but then agrees with its deprecation
+- Discussion [Who uses column groups?](https://github.com/datarootsio/data-cleaning-workshop)
+- Discussion [The future of the records mode](https://github.com/datarootsio/data-cleaning-workshop) about better ways of implementing grouping and a hierarchical model in OntoRefine
+
+This feature is related to [Rows vs Records](../manual/exploring#rows-vs-records), which however continues to be supported.
+:::
+
 Consider the following data:
 
 ![Illustration of row groups in OpenRefine](https://github.com/datarootsio/data-cleaning-workshop)
