@@ -1,7 +1,7 @@
 # Data Cleaning Workshop
 
 [![DOI](https://zenodo.org/badge/6220644.svg)](https://zenodo.org/badge/latestdoi/6220644)
-[![Join the chat at https://github.com/datarootsio/data-cleaning-workshop](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop) ![Java CI](https://github.com/datarootsio/data-cleaning-workshop) [![Coverage Status](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop) [![Translation progress](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop) [![Total alerts](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop)
+[![Join the chat at https://github.com/datarootsio/data-cleaning-workshop](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop) ![Java CI](https://github.com/datarootsio/data-cleaning-workshop) [![Coverage Status](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop) [![Translation progress](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop)
 
 Data Cleaning Workshop is a Java-based power tool that allows you to load data, understand it,
 clean it up, reconcile it, and augment it with data coming from
