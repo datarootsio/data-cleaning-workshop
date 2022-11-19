@@ -286,12 +286,12 @@ Libraries using the [Data Cleaning Workshop API](openrefine-api):
 
 ### Python {#python}
 * [refine-client-py](https://github.com/PaulMakepeace/refine-client-py/)
-  * Or this fork of the above with an extended CLI [openrefine-client](https://github.com/datarootsio/data-cleaning-workshop)
+* [openrefine-client](https://github.com/datarootsio/data-cleaning-workshop), a fork of the above with an extended CLI 
 * [refine-python](https://github.com/maxogden/refine-python)
 
 ### Ruby {#ruby}
 * [refine-ruby](https://github.com/distillytics/refine-ruby)
-  * The above is a maintained fork of [google-refine](https://github.com/maxogden/refine-ruby)
+  * The above is a maintained fork of [refine-ruby](https://github.com/maxogden/refine-ruby)
 * [google_refine](https://github.com/chengguangnan/google_refine)
 
 ### NodeJS {#nodejs}
@@ -304,7 +304,7 @@ Libraries using the [Data Cleaning Workshop API](openrefine-api):
 * [openrefine-php-client](https://github.com/datarootsio/data-cleaning-workshop)
 
 ### Java {#java}
-* [refine-java](https://github.com/dtap-gmbh/refine-java)
+* [refine-java](https://github.com/ancore/refine-java)
 
 ### Bash {#bash}
 * [bash-refine.sh](https://gist.github.com/felixlohmeier/d76bd27fbc4b8ab6d683822cdf61f81d) (templates for shell scripts)
