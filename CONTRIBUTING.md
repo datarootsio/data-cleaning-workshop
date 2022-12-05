@@ -4,13 +4,14 @@ This document presents how you can contribute to the Data Cleaning Workshop proj
 
 Our issue list is only for reporting specific bugs and requesting specific features. If you just don't know how to do something using Data Cleaning Workshop, or want to discuss some ideas, please
 - try the [user manual](https://github.com/datarootsio/data-cleaning-workshop)
-- ask on the [Data Cleaning Workshop mailing list](https://github.com/datarootsio/data-cleaning-workshop).
+- ask on the [Data Cleaning Workshop forum](https://github.com/datarootsio/data-cleaning-workshop).
+
 
 If you really want to file a bug or request a feature, go to this [issue list](https://github.com/datarootsio/data-cleaning-workshop). Please use the search function first to make sure a similar issue doesn't already exist. 
 
 ## Promote Data Cleaning Workshop
 
-You don't need to be a coder to contribute to Data Cleaning Workshop. Did you write a tutorial or article about Data Cleaning Workshop on your blog or site? Are you organizing a workshop or presentation for Data Cleaning Workshop in your city? Let us know via our [user discussion list](https://github.com/datarootsio/data-cleaning-workshop) or Twitter account ([@OpenRefine](https://github.com/datarootsio/data-cleaning-workshop)). We will share the news via our monthly update and via our Twitter handle. 
+You don't need to be a coder to contribute to Data Cleaning Workshop. Did you write a tutorial or article about Data Cleaning Workshop on your blog or site? Are you organizing a workshop or presentation for Data Cleaning Workshop in your city? Let us know via our [forum](https://github.com/datarootsio/data-cleaning-workshop) or Twitter account ([@OpenRefine](https://github.com/datarootsio/data-cleaning-workshop)). We will share the news via our monthly update and via our Twitter handle. 
 
 ## Contributing translations
 
@@ -29,7 +30,7 @@ You can contribute code in various ways:
 
 All developers including new distributions and plugin developers are invited to leverage the following Data Cleaning Workshop project management areas to avoid splitting the community in different communication channels.
 - the [official documentation](https://github.com/datarootsio/data-cleaning-workshop) for shared documentation between both user docs and [technical reference](https://github.com/datarootsio/data-cleaning-workshop)
-- the [developer mailing list](https://github.com/datarootsio/data-cleaning-workshop) for technical questions, new feature development and anything code related. We invite you to share you idea first via the developer mailing list. Someone may be able to point out to existing development saving you hours of research and development. 
+- the [developer forum](https://github.com/datarootsio/data-cleaning-workshop) for technical questions, new feature development and anything code related. We invite you to share you idea there first. Someone may be able to point out to existing development saving you hours of research and development. 
 - [Data Cleaning Workshop github issue tracker](https://github.com/datarootsio/data-cleaning-workshop) for requesting new features and bug reports.
 - [Gitter Chat](https://github.com/datarootsio/data-cleaning-workshop)
 
