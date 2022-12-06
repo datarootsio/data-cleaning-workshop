@@ -8,6 +8,7 @@ clean it up, reconcile it, and augment it with data coming from
 the web. All from a web browser and the comfort and privacy of your own computer.
 
 Official website: **https://github.com/datarootsio/data-cleaning-workshop
+
 Community forum: **https://github.com/datarootsio/data-cleaning-workshop
 
 [<img src="https://github.com/datarootsio/data-cleaning-workshop/blob/master/graphics/icon/open-refine-320px.png" align="right">](https://github.com/datarootsio/data-cleaning-workshop)
@@ -33,7 +34,7 @@ If you have cloned this repository to your computer, you can run Data Cleaning W
 
 This requires [JDK 11](https://adoptium.net/), [Apache Maven](https://maven.apache.org/) and [NPM](https://www.npmjs.com/).
 
-## Documentation and Videos
+## Documentation
 
 * [User Manual](https://github.com/datarootsio/data-cleaning-workshop)
 * [FAQ](https://github.com/datarootsio/data-cleaning-workshop)
