@@ -28,7 +28,7 @@ Contributors are users getting involved in the project more closely. Contributio
 - Supporting new users via the [user discussion list](https://github.com/datarootsio/data-cleaning-workshop)
 - Submitting patches to fix bugs or add features via pull requests
 - Maintaining and improving the [website](https://github.com/datarootsio/data-cleaning-workshop)
-- Writing and maintaining the [documentation](https://github.com/datarootsio/data-cleaning-workshop/tree/master/docs)
+- Writing and maintaining the [documentation](https://github.com/datarootsio/data-cleaning-workshop)
 
 How to become an Data Cleaning Workshop contributor? You will find more details in our [contributing guideline](https://github.com/datarootsio/data-cleaning-workshop/blob/master/CONTRIBUTING.md)
 
@@ -114,7 +114,7 @@ The Project Director:
 * Assists in finding and secure new sources of funding
 * Supports the Advisory Committee in Data Cleaning Workshop’s day-to-day operations.
 
-The current Project Director is [Sandra Fauconnier](https://github.com/trnstlntk).
+Currently Data Cleaning Workshop has no project director
 
 ## Fiscal sponsorship: Code For Science and Society
 
