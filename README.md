@@ -20,11 +20,8 @@ Community forum: **https://github.com/datarootsio/data-cleaning-workshop
 
 ## Snapshot releases
 
-Latest development version, packaged for:
-* [Linux](https://github.com/datarootsio/data-cleaning-workshop)
-* [MacOS](https://github.com/datarootsio/data-cleaning-workshop)
-* [Windows without embedded JRE](https://github.com/datarootsio/data-cleaning-workshop)
-* [Windows with embedded JRE](https://github.com/datarootsio/data-cleaning-workshop)
+You can download snapshots of the development version of Data Cleaning Workshop.
+To do so, you need to be logged in to GitHub. Then, click on the first item with a green tick / check mark on [this page](https://github.com/datarootsio/data-cleaning-workshop) and scroll down to the Artifacts section to find the version that matches your operating system.
 
 ## Run from source
 
