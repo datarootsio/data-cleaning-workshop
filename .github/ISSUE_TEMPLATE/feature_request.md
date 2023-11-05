@@ -2,7 +2,7 @@
 name: Feature request
 about: Suggest an idea for Data Cleaning Workshop
 title: ''
-labels: enhancement, to be reviewed
+labels: ["Type: Feature Request", "Status: Pending Review"]
 assignees: ''
 
 ---
