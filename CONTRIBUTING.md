@@ -24,7 +24,7 @@ When browsing our documentation, feel free to use the edit button to suggest imp
 ##  Contributing code 
 
 You can contribute code in various ways:
-- Fix bugs or implement new features. Follow [our guide towards your first code contribution](https://github.com/datarootsio/data-cleaning-workshop).
+- Fix bugs or implement new features. Follow [our guide towards your first code contribution](https://github.com/datarootsio/data-cleaning-workshop)
 - Develop an Data Cleaning Workshop extension
 - Develop a reconciliation service
 
