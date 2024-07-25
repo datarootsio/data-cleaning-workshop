@@ -53,13 +53,3 @@ If you don't know where to start and are looking for a bug to fix, please see ou
 Data Cleaning Workshop supports a plugin architecture to extend its functionality. You can find more information on how to write extension on [our wiki](https://github.com/datarootsio/data-cleaning-workshop). Giuliano Tortoreto wrote a separate documentation detailing how to build an extension for Data Cleaning Workshop. A [LaTeX](https://github.com/datarootsio/data-cleaning-workshop) and [PDF version](https://github.com/datarootsio/data-cleaning-workshop) are available.
 
 If you want to list your extension on the download page, please edit [this file](https://github.com/datarootsio/data-cleaning-workshop).
-
-### New distributions
-
-Data Cleaning Workshop is already available in many different distributions (see the [download page](https://github.com/datarootsio/data-cleaning-workshop)). New distributions often package Data Cleaning Workshop for a specific usage or port it. We are fine with new forks ([see discussion](https://github.com/datarootsio/data-cleaning-workshop)) but we invite you to engage with the community to share your roadmap and progress.
-
-Github offers a powerful system to work between different repositories and we encourage you to leverage it:
-- You can cross reference issues and pull requests between Github repository using `user/repository#number` ([see more here](https://github.com/blog/967-github-secrets#cross-repository-issue-references))
-- If you want to merge a Pull Request that is pending for review to your own repository check the pull request locally ([see more here](https://help.github.com/articles/checking-out-pull-requests-locally/)).
-
-Don't forget to contribute to the upstream ([main Data Cleaning Workshop repository](https://github.com/datarootsio/data-cleaning-workshop)) so your changes from your distribution can be reviewed and merged and to keep other developers aware of your progress. If you want to list your distribution on the download page, please edit [this file](https://github.com/datarootsio/data-cleaning-workshop).
