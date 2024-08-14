@@ -1,7 +1,7 @@
 # Data Cleaning Workshop
 
 [![DOI](https://zenodo.org/badge/6220644.svg)](https://zenodo.org/badge/latestdoi/6220644)
-[![Join the chat at https://github.com/datarootsio/data-cleaning-workshop](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop) 
+[![Join the chat at https://github.com/datarootsio/data-cleaning-workshop](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop)
 [![Snapshot release](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop) [![Coverage Status](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop) [![Translation progress](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop)
 
 Data Cleaning Workshop is a Java-based power tool that allows you to load data, understand it,
@@ -30,7 +30,7 @@ If you have cloned this repository to your computer, you can run Data Cleaning W
 * `./refine` on Mac OS and Linux
 * `refine.bat` on Windows
 
-This requires [JDK 11](https://adoptium.net/) or newer, [Apache Maven](https://maven.apache.org/) and [NPM](https://www.npmjs.com/) 16 or newer.
+This requires [JDK 11](https://adoptium.net/) or newer, [Apache Maven](https://maven.apache.org/) and [Node.js 18](https://nodejs.org/) or newer.
 
 ## Documentation
 
