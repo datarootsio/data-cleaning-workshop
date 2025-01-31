@@ -75,7 +75,7 @@ Steering Committee members are invited by Data Cleaning Workshop's Advisory Comm
 There is currently no Steering Committee as the project is looking for a better format. See discussion [Fwd: Steering committee being disbanded?](https://github.com/datarootsio/data-cleaning-workshop) and [Proposition to create Data Cleaning Workshop Ambassador Council](https://github.com/datarootsio/data-cleaning-workshop)
 
 ### Advisory Committee
-The Advisory Committee runs the administrative aspect of the project on a day to day basis with the support of Code for Science and Society (CS&S). Its member are bound by the  fiscal sponsorship agreement with Code for Science and Society. They meet once per month with Code for Science and Society.
+The Advisory Committee runs the administrative aspect of the project on a day to day basis with the support of Code for Science and Society (CS&S). Its members are bound by the  fiscal sponsorship agreement with Code for Science and Society. They meet once per month with Code for Science and Society.
 
 It is composed of at least three members. No more than 49 percent of the members of the Advisory Committee may be paid by the project.
 
