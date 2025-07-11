@@ -3,6 +3,8 @@
 [![DOI](https://zenodo.org/badge/6220644.svg)](https://zenodo.org/badge/latestdoi/6220644)
 [![Join the chat at https://github.com/datarootsio/data-cleaning-workshop](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop)
 [![Snapshot release](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop) [![Coverage Status](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop) [![Translation progress](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop)
+[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor-GitHub-blue)](https://github.com/datarootsio/data-cleaning-workshop)
+[![Donate](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop)
 
 Data Cleaning Workshop is a Java-based power tool that allows you to load data, understand it,
 clean it up, reconcile it, and augment it with data coming from
@@ -53,6 +55,13 @@ This requires [JDK 11](https://adoptium.net/) or newer, [Apache Maven](https://m
 ## Licensing and legal issues
 
 OpenRefine is open source software and is licensed under the BSD license located in the [LICENSE.txt](LICENSE.txt). See the folders `licenses` under `/main/webapp/` as well as within each `/extensions` for information on open source libraries that OpenRefine depends on.
+
+## Funding Data Cleaning Workshop
+
+Data Cleaning Workshop is maintained by a small core team and relies on grants plus community support.
+• **Donate** or become a monthly sponsor: https://github.com/datarootsio/data-cleaning-workshop
+• **See our backers**: https://github.com/datarootsio/data-cleaning-workshop
+• **Machine-readable manifest**: https://github.com/datarootsio/data-cleaning-workshop
 
 ## Credits
 
