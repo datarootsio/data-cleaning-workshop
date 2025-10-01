@@ -5,6 +5,7 @@
 [![Snapshot release](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop) [![Coverage Status](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop) [![Translation progress](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop)
 [![Sponsor on GitHub](https://img.shields.io/badge/Sponsor-GitHub-blue)](https://github.com/datarootsio/data-cleaning-workshop)
 [![Donate](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop)
+[![Data Cleaning Workshop Store](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop)
 
 Data Cleaning Workshop is a Java-based power tool that allows you to load data, understand it,
 clean it up, reconcile it, and augment it with data coming from
