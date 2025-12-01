@@ -62,6 +62,7 @@ Also referred to as Core Dev. The Core Developer Group are trusted developers wh
 
 **Current list of Core Developers:**
 - Tom Morris [@tfmorris](https://github.com/tfmorris) and on the [forum](https://github.com/datarootsio/data-cleaning-workshop)
+- Albin Larsson [@Abbe98](https://github.com/Abbe98) and on the [forum](https://github.com/datarootsio/data-cleaning-workshop)
 
 #### Release Manager
 The Release Manager is responsible to
