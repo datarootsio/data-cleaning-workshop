@@ -4,7 +4,7 @@
     "core-views/custom-facets": "Customised facets",
     "core-views/columnize": "Columnise by key/value columns",
     "core-views/columnize-col": "Columnise by key/value columns…",
-    "name": "English",
+    "name": "English (United Kingdom)",
     "core-index/slogan": "A power tool for working with messy data",
     "core-about/definition": "OpenRefine is a power tool for working with messy data. Use it to improve data consistency, link it to data registries such as Wikidata, augment it with data from other sources, transform data into different formats for other tools to consume, and contribute data back to their sources. OpenRefine is not a web service but a desktop app that runs on your own computer, so you can process sensitive data privately.",
     "core-about/contributors": "Contributors (in chronological order)",
