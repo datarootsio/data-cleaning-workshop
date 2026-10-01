@@ -13,7 +13,7 @@ cd ../../..
 Build with `./refine build`, then start a dedicated test server in one terminal:
 
 ```bash
-./refine -d "${TMPDIR:-/tmp}/data-cleaning-workshop-ui-tests" -p 3334
+./refine -d "${TMPDIR:-/tmp}/data-cleaning-workshop-ui-tests" -p 3333
 ```
 
 The tests create and delete projects, so use this separate test data directory.
@@ -21,7 +21,7 @@ In another terminal, run Cypress directly from the repository root:
 
 ```bash
 cd main/tests/cypress
-npx cypress run --browser electron --headless --env OPENREFINE_URL=http://127.0.0.1:3334
+npx cypress run --browser electron --headless --env OPENREFINE_URL=http://127.0.0.1:3333
 ```
 
 This preserves Cypress's exit status. Add `--spec 'cypress/e2e/open-project/*.cy.js'` to select a group of specs,
