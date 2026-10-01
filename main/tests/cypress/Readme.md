@@ -10,7 +10,8 @@ npx cypress install
 cd ../../..
 ```
 
-Build with `./refine build`, then start a dedicated test server in one terminal:
+Build with `./refine build` and stop any application already using port 3333.
+Then start a dedicated test server in one terminal:
 
 ```bash
 ./refine -d "${TMPDIR:-/tmp}/data-cleaning-workshop-ui-tests" -p 3333
