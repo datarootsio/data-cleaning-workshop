@@ -1,5 +1,6 @@
-If you are having trouble with Data Cleaning Workshop we suggest the following steps:
+# Workshop help
 
-1. Read through our [FAQ (frequently Asked Questions)](https://github.com/datarootsio/data-cleaning-workshop) 
-2. Search the web for similar issues in our community
-3. Ask your question on [our forum](https://github.com/datarootsio/data-cleaning-workshop)
+Start with [the setup instructions](../README.md) and [the exercise](../EXERCISE.md).
+For setup problems or unclear requirements, ask your workshop facilitator or use the
+[workshop issues](https://github.com/datarootsio/data-cleaning-workshop/issues).
+Include the command, observed result, and relevant environment details when reporting a problem.

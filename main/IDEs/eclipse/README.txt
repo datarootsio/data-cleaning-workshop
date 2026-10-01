@@ -1,31 +1,11 @@
+Eclipse launch helpers
+======================
 
-                                 OpenRefine Helpers for Eclipse
-                                 ---------------------------------
-                                 
-                        
-  This file contains Eclipse-specific help files that can get simplify your life 
-  developing Data Cleaning Workshop with Eclipse (http://www.eclipse.org/).
-  
-  
-  Launch Files (*.launch)
-  -----------------------
-  
-  These are files that help you running Data Cleaning Workshop directly from eclipse without having to execute
-  the shell scripts.
-  
-  To run, right click on the files directly from Eclipse, then do "Run As -> <name>".
-  
-  
-  NOTE: you have to install the TestNG Eclipse Plugin for the above to work. For more info on how
-  to install this plugin, see http://testng.org/doc/eclipse.html
+The *.launch files support running the application from Eclipse. Right-click a
+launch file and choose Run As, then its launch configuration name.
 
+Test launch configurations require the TestNG Eclipse plugin. See:
+https://testng.org/doc/eclipse.html
 
-                                           - o -                                                
-  
-                                                
-   Thank you for your interest.
-   
-   
-                                             The OpenRefine Development Team
-                                           http://github.com/OpenRefine/OpenRefine
-                                           
+Follow the repository README.md for the supported JDK and build prerequisites.
+These Eclipse support files were contributed by the OpenRefine Development Team.

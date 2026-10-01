@@ -1,32 +1,7 @@
+Eclipse formatting support
+==========================
 
-                                 OpenRefine for Eclipse
-                                 -------------------------
-                                 
-                        
-  This file contains Eclipse-specific help files that can get simplify your life 
-  developing Data Cleaning Workshop with Eclipse (http://www.eclipse.org/).
-  
-  
-  For general information on how to setup your Eclipse, please see Data Cleaning Workshop technical documentation at:
-  https://github.com/datarootsio/data-cleaning-workshop
-  
-  
-  Code Style Format Configurations (Refine.style.xml)
-  ------------------------------------------------------
-  
-  This is the code formatting configurations that all Data Cleaning Workshop developers should follow.
-  
-  To import, open the Eclipse preferences, then follow to "Java > Code Style > Formatter"
-  and click the "Import" button and load the file.  
+Import Refine.style.xml using Preferences > Java > Code Style > Formatter > Import.
+Follow the repository README.md for the supported JDK and build prerequisites.
 
-
-
-                                           - o -                                                
-  
-                                                
-   Thank you for your interest.
-   
-   
-                                             The OpenRefine Development Team
-                                           http://github.com/OpenRefine/OpenRefine
-                                           
+These Eclipse support files were contributed by the OpenRefine Development Team.

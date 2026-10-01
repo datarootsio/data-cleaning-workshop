@@ -1,70 +1,39 @@
-The Data Cleaning Workshop project welcomes contributions in a variety of forms.
-This document contains information a few of the ways you can contribute to the Data Cleaning Workshop project.
-Please also review our [Governance model](https://github.com/datarootsio/data-cleaning-workshop/blob/master/GOVERNANCE.md)
+# Contributing to the workshop
 
-## Provide peer user support
+Read [EXERCISE.md](EXERCISE.md) and complete [the setup](README.md#setup) before starting.
+Ask the facilitator about ambiguous reports or requirements. Record useful clarifications with your work.
 
-We welcome users to the [Data Cleaning Workshop forum](https://github.com/datarootsio/data-cleaning-workshop) to ask questions and request assistance.
-If you can help answer questions in your area of expertise, it would be a benefit to the community.
+## Working on a task
 
-If a forum discussion determines there is a bug in Data Cleaning Workshop or a new feature is identified,
-we welcome bug reports and feature requests. Please search the [issue tracker](https://github.com/datarootsio/data-cleaning-workshop) first to make sure
-the bug / feature hasn't already been added. Note: the development team principally works from the issue
-tracker, so anything not included there risks getting lost.
+Create your own branch, for example `1-investigate-behavior`. Keep fixes for the first ticket ahead of feature work.
+Use small commits that explain the change. Do not force-push or rewrite shared history.
 
-## Promote Data Cleaning Workshop
+Capture a reproducible observation before editing code. Compare competing explanations against evidence, then add a test
+that fails for the behavior you intend to correct. For a feature, agree the expected behavior before implementing it.
+Keep unrelated refactoring out of the change.
 
-Promoting Data Cleaning Workshop is a great way to give back. Did you write a tutorial or article about Data Cleaning Workshop on your blog or site?
-Are you organizing a workshop or presentation for Data Cleaning Workshop in your city? Let us, and the community, know via our [forum](https://github.com/datarootsio/data-cleaning-workshop) or social media.
+## Validation
 
-## Contribute translations
+Run these commands from the repository root after code changes:
 
-We want Data Cleaning Workshop to be available in as many languages as possible to serve
-the biggest community of users. You can help us [translate OpenRefine](https://github.com/datarootsio/data-cleaning-workshop) into languages you are fluent in [via Weblate](https://github.com/datarootsio/data-cleaning-workshop).
-Although we have the beginnings of translations for many languages, only a few are complete and popular languages
-like Spanish, Brazilian Portuguese, and French could use help.
+```bash
+./refine lint
+./refine build
+```
 
-## Contribute documentation
+Then run tests appropriate to the affected code. `./refine test` runs the Java test suite;
+`./refine server_test` and `./refine extensions_test` cover their respective areas.
+Java tests live in module `src/test` directories and in `main/tests/server` and extension test directories.
+New features should include unit and end-to-end tests for relevant behavior.
 
-When browsing our [user manual](https://github.com/datarootsio/data-cleaning-workshop) or other documentation, feel free to use the edit button to suggest improvements.
-For large changes, you might want to first discuss your proposed changes on the forum and then [prepare your changes locally](https://github.com/datarootsio/data-cleaning-workshop).
+For frontend behavior, follow the [Cypress setup and test instructions](main/tests/cypress/Readme.md).
+Inspect your diff after formatting and avoid submitting unrelated changes.
 
-##  Contribute code 
+## Sharing results
 
-You can contribute code in various ways:
-- Fix bugs or implement new features. Follow [our guide towards your first code contribution](https://github.com/datarootsio/data-cleaning-workshop)
-- Improve test coverage. Much of our code was originally written without tests, so help on this front is very much appreciated.
-- Develop an Data Cleaning Workshop extension
-- Develop a reconciliation service
+Use the workshop repository for any issue discussion or pull request requested by your facilitator.
+Describe the original behavior, the diagnosis supported by your evidence, and the result after the change.
+Include relevant screenshots for UI changes, the test commands and results, and any limitations or unresolved questions.
 
-All developers including new distributions and plugin developers are invited to leverage the following Data Cleaning Workshop project management areas.
-- the [official documentation](https://github.com/datarootsio/data-cleaning-workshop) for shared documentation between both user docs and [technical reference](https://github.com/datarootsio/data-cleaning-workshop)
-- the [developer forum](https://github.com/datarootsio/data-cleaning-workshop) for technical questions, new feature development and anything code related. We invite you to share your idea there first. Someone may be able to point out to existing development saving you hours of research and development.
-- the [issue tracker](https://github.com/datarootsio/data-cleaning-workshop) for requesting new features and bug reports.
-- [Gitter Chat](https://github.com/datarootsio/data-cleaning-workshop) (only occasionally monitored)
-
-### How to submit PR's (pull requests), patches, and bug fixes
-
-All code changes are made via GitHub Pull Requests which are reviewed before merging, even those by core committers.
-
-If you are unfamiliar with git, GitHub, or open source development, please see [our guide towards your first code contribution](https://github.com/datarootsio/data-cleaning-workshop).
-
-- If you are looking for something to work on, please see our [issue list](https://github.com/datarootsio/data-cleaning-workshop). We have a separate tag for [Good First Issues](https://github.com/datarootsio/data-cleaning-workshop).
-
-- create a branch named with the issue number and a brief description
-- avoid changes unrelated to fixing the issue
-- create unit and/or end-to-end tests which cover the bug fix or new feature
-- run `./refine lint` before submitting your PR (CI will fail if lint fails)
-- make sure all tests are green before submitting your PR
-- Add screenshots for UI changes (if applicable).
-- we attempt to prioritize PR reviews, but please be patient
-
-### New functionality via extensions
-
-Data Cleaning Workshop supports a plugin architecture to extend its functionality. You can find more information on how to write
-an extension on our [website](https://github.com/datarootsio/data-cleaning-workshop).
-Giuliano Tortoreto also wrote separate documentation detailing how to build an extension for Data Cleaning Workshop.
-[PDF](https://github.com/datarootsio/data-cleaning-workshop) and [LaTeX](https://github.com/datarootsio/data-cleaning-workshop) versions are available. It dates from 2014, but still contains good information.
-
-If you want your extension included in the [list of extensions](https://github.com/datarootsio/data-cleaning-workshop) advertised on openrefine.org,
-please submit a pull request on the download page, please edit [this file](https://github.com/datarootsio/data-cleaning-workshop).
+Different implementations are welcome when they satisfy the agreed behavior and have convincing tests.
+Follow the [Code of Conduct](CODE_OF_CONDUCT.md) and preserve existing copyright, license, and attribution notices.

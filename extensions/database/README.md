@@ -1,9 +1,13 @@
-This project is an Data Cleaning Workshop extension for importing database data using JDBC.
-For exporting to a database, other code can be found under folder `OpenRefine/main/src/com/google/refine/exporters/sql`
+# Database extension
 
-## Adding support for other database vendors
+This extension imports database data using JDBC. SQL export code lives in
+[`main/src/com/google/refine/exporters/sql`](../../main/src/com/google/refine/exporters/sql).
 
-1. You'll want to register an additional Database Service:  https://github.com/datarootsio/data-cleaning-workshop/blob/master/extensions/database/src/com/google/refine/extension/database/DatabaseService.java
-2. Provide the connection and service classes, look at the PostgreSQL one or MySQL one as examples: https://github.com/datarootsio/data-cleaning-workshop/tree/master/extensions/database/src/com/google/refine/extension/database
-3. Then wire up the interface with defaults as desired: https://github.com/datarootsio/data-cleaning-workshop/blob/master/extensions/database/module/scripts/index/database-source-ui.js#L93
-4. Add drivers manually to the classpath, or update the pom file to provide them as dependencies as other DB libraries are done: https://github.com/datarootsio/data-cleaning-workshop/blob/master/extensions/database/pom.xml
+## Adding support for a database vendor
+
+1. Register a service in [`DatabaseService.java`](src/com/google/refine/extension/database/DatabaseService.java).
+2. Provide connection and service classes; use the existing
+   [PostgreSQL](src/com/google/refine/extension/database/pgsql) or
+   [MySQL](src/com/google/refine/extension/database/mysql) implementations as examples.
+3. Set interface defaults in [`database-source-ui.js`](module/scripts/index/database-source-ui.js).
+4. Add the driver's dependency to this extension's [`pom.xml`](pom.xml), following the other database drivers.

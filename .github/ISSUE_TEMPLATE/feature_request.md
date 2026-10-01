@@ -1,33 +1,19 @@
 ---
 name: Feature request
-about: Suggest an idea for Data Cleaning Workshop
+about: Describe a workflow you would like to improve during the workshop
 title: ''
-labels: ["Type: Feature Request", "Status: Pending Review"]
+labels: []
 assignees: ''
-
 ---
-### Use case or need
-<!-- Describe what you are trying to achieve and in what context.
-Focus on your workflow rather than a solution. What is difficult today? -->
 
-### What would improve?
-<!-- What would a good outcome look like for you? 
-Describe the expected improvement from a user perspective. -->
+### User need
+<!-- What are you trying to achieve, and what is difficult today? -->
 
-### Proposed solution (optional)
-<!-- If you have ideas on how this could be implemented, describe them here.
-This is optional: focusing on the need is enough. -->
+### Desired outcome
+<!-- Describe the improvement from the user's perspective. -->
+
+### Clarifications and scope
+<!-- Record questions, answers, assumptions, and agreed acceptance criteria as the discussion develops. -->
 
 ### Alternatives considered
-<!-- Any other approaches or workarounds you have tried -->
-
-### Additional context
-<!-- Links, screenshots, examples, related discussions -->
-
----
-_This issue may be edited as the conversation evolves._
-### Discussion notes
-<!-- Used to capture clarifications, decisions, and updates as the conversation evolves -->
-
-### Open questions
-<!-- Points that need discussion before implementation -->
+<!-- Optional: describe approaches or workarounds worth comparing. -->

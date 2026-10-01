@@ -1,244 +1,51 @@
-# AGENTS.md - Data Cleaning Workshop Project Information
+# Data Cleaning Workshop — agent guidance
 
-This file provides important information about the Data Cleaning Workshop project and repository for AI agents and developers.
+This repository is a standalone dataroots workshop based on an existing Java application.
+Read `EXERCISE.md` and the assigned workshop issue before changing behavior. Ask for missing requirements and distinguish
+observations from hypotheses. Keep changes focused on the current task and retain existing authorship and license notices.
 
-## Project Overview
+## Repository map
 
-**Data Cleaning Workshop** is a Java-based power tool that allows you to load data, understand it, clean it up, reconcile it, and augment it with data coming from the web. All from a web browser and the comfort and privacy of your own computer.
+- `modules/core`: data model, operations, filtering, and project state.
+- `modules/grel`: expression language.
+- `main`: application integration, browser UI, and Cypress tests.
+- `server`: embedded server and launcher support.
+- `extensions`: database, Jython, PC-Axis, and Wikibase extensions.
+- `packaging`: distribution assembly.
+- `benchmark`: performance benchmarks.
 
-- **License**: BSD-3-Clause
-- **Official Website**: https://github.com/datarootsio/data-cleaning-workshop
-- **Documentation**: https://github.com/datarootsio/data-cleaning-workshop
-- **Community Forum**: https://github.com/datarootsio/data-cleaning-workshop
-- **Version**: 3.10-SNAPSHOT (as of this writing)
+The backend uses Java and a multi-module Maven build. The frontend uses JavaScript, jQuery, jQuery UI, Select2,
+Underscore, and `@wikimedia/jquery.i18n`. Java tests use TestNG; browser tests use Cypress.
 
-## Technology Stack
+## Environment and commands
 
-### Backend
-- **Language**: Java
-- **Minimum Java Version**: JDK 21
-- **Maximum Java Version**: JDK 26
-- **Build Tool**: Apache Maven 
-- **Project Structure**: Multi-module Maven project
-
-### Frontend
-- **JavaScript Libraries**: jQuery, jQuery UI, Select2, Underscore.js
-- **Internationalization**: @wikimedia/jquery.i18n
-- **Build/Package Management**: Node.js 24+ and npm 11.16.0+
-- **E2E Testing**: Cypress with Node.js 24
-
-### Project Modules
-- `modules/core` - Core Data Cleaning Workshop functionality
-- `modules/grel` - GREL (General Refine Expression Language)
-- `main` - Main application and webapp
-- `server` - Server components
-- `extensions` - Extension modules (database, jython, pc-axis, wikibase)
-- `packaging` - Distribution packaging
-- `benchmark` - Performance benchmarks
-
-## Build System
-
-### Building Data Cleaning Workshop
+Use JDK 21–26, Apache Maven, Node.js 24+, and npm 11.16.0+.
+Treat the root `pom.xml` and package manifests as the source of truth for dependency versions.
 
 ```bash
-./refine build
-```
-
-This command:
-- Compiles all Java code using Maven
-- Builds the webapp frontend
-- Prepares all modules and extensions
-- Creates necessary artifacts
-
-### Running Data Cleaning Workshop
-
-```bash
-# On Mac OS and Linux
-./refine
-
-# On Windows
-refine.bat
-```
-
-**Configuration Options:**
-- `-c <path>` - Path to refine.ini file (default: ./refine.ini)
-- `-d <path>` - Path to the data directory
-- `-H <host>` - Expected host header value
-- `-i <interface>` - Network interface to bind (default: 127.0.0.1)
-- `-m <memory>` - JVM min and max memory heap size (default: 1400M)
-- `-p <port>` - Port to listen on (default: 3333)
-- `-v <level>` - Verbosity level [error,warn,info,debug,trace]
-- `-w <path>` - Path to the webapp (default: main/webapp)
-- `--debug` - Enable JVM debugging on port 8000
-- `--jmx` - Enable JMX monitoring
-
-### Other Build Commands
-
-```bash
-./refine clean              # Clean compiled classes
-./refine test              # Run all tests
+./refine build             # Build after code changes, before running or testing
+./refine                   # Start the application at http://127.0.0.1:3333
+./refine test              # Run the Java test suite
+./refine server_test       # Run application/server tests
 ./refine extensions_test   # Run extension tests
-./refine server_test       # Run server tests
-./refine e2e_tests         # Run end-to-end tests
-./refine lint              # Reformat source code according to conventions
-./refine mac_dist <ver>    # Make MacOS binary distribution
-./refine windows_dist <ver> # Make Windows binary distribution
-./refine linux_dist <ver>  # Make Linux binary distribution
-./refine dist <ver>        # Make all distributions
+./refine lint              # Apply repository source formatting
+./refine e2e_tests         # Run browser tests; requires separate test dependency setup
 ```
 
-## Testing Infrastructure
+See `main/tests/cypress/Readme.md` for browser-test setup and selecting a spec.
+The E2E launcher starts its own server, so stop a running development server first.
 
-### Unit Tests
-- **Framework**: TestNG (Java)
-- **Location**: Throughout the codebase in `src/test` directories
-- **Run**: `./refine test` or `./refine server_test` or `./refine extensions_test`
+Runtime options include `-d <data-directory>`, `-p <port>`, `-m <memory>`, `-i <interface>`, and `-c <config-path>`.
+Use a separate workshop data directory for manual experiments.
 
-### End-to-End Tests
-- **Framework**: Cypress
-- **Location**: `main/tests/cypress/`
-- **Setup**: 
-  ```bash
-  cd main/tests/cypress
-  npm i -g yarn
-  yarn install
-  ```
-- **Run**: `./refine e2e_tests`
-- **Browser**: Chrome (default in CI)
-- **Configuration**: Uses environment variables like `CYPRESS_BROWSER`, `CYPRESS_SPECS`, `CYPRESS_GROUP`
+## Change and review expectations
 
-### Testing in CI
-The project uses GitHub Actions for continuous integration:
-- **E2E Tests**: `.github/workflows/pull_request_e2e.yml` - Runs Cypress tests on pull requests
-- **Server Tests**: `.github/workflows/pull_request_server.yml` - Runs server-side tests
-- **CodeQL Analysis**: Security scanning for Java and JavaScript
+1. Work on your own issue branch; do not force-push or rewrite shared history.
+2. Reproduce the report and collect evidence before proposing a cause.
+3. Add tests that demonstrate the behavior being fixed or added. New features need unit and browser coverage where applicable.
+4. Run `./refine lint` and `./refine build`, then the relevant tests. Inspect formatting changes for unrelated edits.
+5. Report the exact checks run, their results, and any checks you could not run. Do not claim unexecuted tests passed.
+6. Explain user-visible behavior and tradeoffs in the review description.
 
-## Development Workflow
-
-### Code Contributions
-1. Fork the repository
-2. Create a branch named with the issue number and brief description
-3. Make changes (avoid unrelated modifications)
-4. Create unit and/or E2E tests for your changes
-5. Run `./refine lint` before submitting (CI will fail if lint fails)
-6. Ensure all tests pass
-7. Submit a pull request for review
-
-### Code Style and Formatting
-- **Linting**: Run `./refine lint` to reformat code according to Data Cleaning Workshop conventions
-- **EditorConfig**: The repository includes `.editorconfig` for consistent formatting:
-  - Charset: UTF-8
-  - Line endings: LF
-  - Indent: 4 spaces (2 for YAML, JSON, LESS, shell scripts)
-  - Max line length: 120 characters
-  - Java imports organized with specific layout rules
-  - Insert final newline
-
-### Important Files
-- `pom.xml` - Root Maven project configuration
-- `refine` / `refine.bat` - Main launch scripts
-- `refine.ini` - Runtime configuration (can be created)
-- `.editorconfig` - Code formatting rules
-- `CONTRIBUTING.md` - Contribution guidelines
-- `GOVERNANCE.md` - Project governance model
-
-## Extension System
-
-Data Cleaning Workshop supports a plugin architecture for extending functionality. Extensions are located in the `extensions/` directory:
-- **database** - Database import/export functionality
-- **jython** - Python scripting support via Jython
-- **pc-axis** - PC-Axis file format support
-- **wikibase** - Wikibase/Wikidata integration
-
-Each extension is a Maven module with its own structure and can include:
-- Java backend code
-- JavaScript frontend code
-- Internationalization files
-- Specific tests
-
-## Project Dependencies
-
-### Backend Dependencies
-- Jackson (2.21.0) - JSON processing
-- Various Apache Commons libraries
-- Jetty - Embedded web server
-- SLF4J - Logging
-- TestNG - Testing
-
-### Frontend Dependencies
-- jQuery (3.7.1)
-- jQuery UI (1.14.2)
-- jQuery Migrate (3.6.0)
-- Select2 (4.1.0)
-- js-cookie (3.0.8)
-- tablesorter (2.32.0)
-- underscore (1.13.8)
-- wikimedia/jquery.i18n (1.0.9)
-
-## Data and Configuration
-
-- **Default Data Directory**: OS-dependent, can be specified with `-d` flag
-- **Default Port**: 3333
-- **Default Interface**: 127.0.0.1 (localhost only)
-- **Default Memory**: 1400M (can be configured)
-
-## Internationalization
-
-Data Cleaning Workshop supports multiple languages:
-- Translation files located in `*/langs/` directories
-- Uses Weblate for community translations - https://github.com/datarootsio/data-cleaning-workshop
-- Managed through @wikimedia/jquery.i18n
-
-## Community and Support
-
-- **Forum**: https://github.com/datarootsio/data-cleaning-workshop
-- **Issue Tracker**: https://github.com/datarootsio/data-cleaning-workshop
-- **Developer Forum**: https://github.com/datarootsio/data-cleaning-workshop
-- **Gitter Chat**: https://github.com/datarootsio/data-cleaning-workshop
-- **Twitter**: @openrefine
-
-## Fiscal Sponsorship
-
-Since 2020, Data Cleaning Workshop is fiscally sponsored by Code for Science and Society (CS&S).
-
-## Important Notes for AI Agents
-
-1. **Always run `./refine lint` before submitting code** - The CI will fail if code is not properly formatted
-2. **Tests are required** - Both unit tests and E2E tests should be added for new features
-3. **Multi-module project** - Changes may span multiple Maven modules (core, grel, main, server, extensions)
-4. **Java version compatibility** - Code must work with Java 11-21
-5. **Build before running** - Always run `./refine build` after code changes before testing
-6. **Memory configuration** - For E2E tests, memory is configured via refine.ini (REFINE_MIN_MEMORY, REFINE_MEMORY)
-7. **Extension isolation** - Extensions are separate modules with their own dependencies
-8. **Frontend changes** - May require Node.js/npm operations in `main/webapp/`
-9. **Path-specific workflows** - Some CI workflows ignore specific paths (e.g., translation files, IDE configs)
-10. **No force push** - The repository does not allow force pushes or rebase operations that rewrite history
-
-## Getting Started for Development
-
-```bash
-# Clone the repository
-git clone https://github.com/OpenRefine/OpenRefine.git
-cd OpenRefine
-
-# Ensure you have required tools installed:
-# - JDK 21 or newer (up to JDK 26)
-# - Apache Maven
-# - Node.js 24 or newer
-
-# Build the project
-./refine build
-
-# Run OpenRefine
-./refine
-
-# Access at http://127.0.0.1:3333
-```
-
-## Additional Resources
-
-- Developer Documentation: https://github.com/datarootsio/data-cleaning-workshop
-- User Manual: https://github.com/datarootsio/data-cleaning-workshop
-- Technical Reference: https://github.com/datarootsio/data-cleaning-workshop
-- Writing Extensions: https://github.com/datarootsio/data-cleaning-workshop
-- Contributing Guide: See CONTRIBUTING.md in the repository
+Follow `.editorconfig` and existing conventions. Keep translated UI strings in the appropriate `langs` files.
+Keep extension-specific dependencies within their extension modules. Use the workshop repository for issues and reviews.

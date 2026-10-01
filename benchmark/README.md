@@ -1,10 +1,10 @@
-# Data Cleaning Workshop Benchmarks (JMH)
+# Application benchmarks (JMH)
 
-This module contains [Java Microbenchmark Harness (JMH)](https://openjdk.org/projects/code-tools/jmh/) benchmarks for Data Cleaning Workshop.
+This module contains [Java Microbenchmark Harness (JMH)](https://openjdk.org/projects/code-tools/jmh/) benchmarks for the application.
 
 ## Prerequisites
 
-- Java (JDK 11+)
+- Java (JDK 21–26)
 - Maven
 
 ## Build The Benchmark JAR

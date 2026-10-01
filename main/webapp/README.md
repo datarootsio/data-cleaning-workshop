@@ -1,6 +1,6 @@
-# Data Cleaning Workshop WebApp
+# Workshop web application
 
-See the main [README.md](../../README.md) for how to build and run Data Cleaning Workshop.
+See the main [README.md](../../README.md) for how to build and run the application.
 
 ## Dependencies
 

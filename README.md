@@ -1,73 +1,46 @@
 # Data Cleaning Workshop
 
-[![DOI](https://zenodo.org/badge/6220644.svg)](https://zenodo.org/badge/latestdoi/6220644)
-[![Join the chat at https://github.com/datarootsio/data-cleaning-workshop](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop)
-[![Snapshot release](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop) [![Coverage Status](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop) [![Translation progress](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop)
-[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor-GitHub-blue)](https://github.com/datarootsio/data-cleaning-workshop)
-[![Donate](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop)
-[![Data Cleaning Workshop Store](https://github.com/datarootsio/data-cleaning-workshop)](https://github.com/datarootsio/data-cleaning-workshop)
+A hands-on workshop in diagnosing unfamiliar software, testing changes, and turning a user request into a useful feature.
+The application lets you import tabular data, inspect it, and clean it in a local browser.
 
-Data Cleaning Workshop is a Java-based power tool that allows you to load data, understand it,
-clean it up, reconcile it, and augment it with data coming from
-the web. All from a web browser and the comfort and privacy of your own computer.
+Start with [EXERCISE.md](EXERCISE.md) for the workshop tasks.
 
-Official website: **https://github.com/datarootsio/data-cleaning-workshop
+## Setup
 
-Community forum: **https://github.com/datarootsio/data-cleaning-workshop
+Install JDK 21–26, Apache Maven, Node.js 24 or newer, and npm 11.16.0 or newer.
+The Java version limits are defined in `pom.xml`; frontend requirements are in `main/webapp/package.json`.
 
-[<img src="https://github.com/datarootsio/data-cleaning-workshop/blob/master/graphics/icon/open-refine-320px.png" align="right">](https://github.com/datarootsio/data-cleaning-workshop)
+```bash
+git clone https://github.com/datarootsio/data-cleaning-workshop.git
+cd data-cleaning-workshop
+./refine build
+./refine
+```
 
-## Download
+Open http://127.0.0.1:3333. On Windows, use `refine.bat build` and `refine.bat`.
+Stop the application with Ctrl+C in its terminal.
 
-* [Data Cleaning Workshop Releases](https://github.com/datarootsio/data-cleaning-workshop)
+Use `./refine -d /path/to/workshop-data` to keep workshop projects in a separate data directory.
+Use `./refine -p 3334` if the default port is occupied.
 
-## Snapshot releases
+## Working in the repository
 
-You can download snapshots of the development version of Data Cleaning Workshop.
-To do so, you need to be logged in to GitHub. Then, click on the first item with a green tick / check mark on [this page](https://github.com/datarootsio/data-cleaning-workshop) and scroll down to the Artifacts section to find the version that matches your operating system.
+- [Exercise](EXERCISE.md): tasks and what to bring to the discussion.
+- [Contributing](CONTRIBUTING.md): branches, validation, and review.
+- [Agent guidance](AGENTS.md): repository layout and commands.
+- [UI tests](main/tests/cypress/Readme.md): end-to-end test setup.
 
-## Run from source
+This repository is maintained for the dataroots workshop. Use its
+[issue tracker](https://github.com/datarootsio/data-cleaning-workshop/issues) for workshop questions,
+or ask your facilitator during the session.
 
-If you have cloned this repository to your computer, you can run Data Cleaning Workshop with:
+## Credits and license
 
-* `./refine` on Mac OS and Linux
-* `refine.bat` on Windows
+This workshop is derived from OpenRefine, created by Metaweb Technologies, Inc. and originally conceived and written
+by David Huynh. It became Google Refine after Google's acquisition of Metaweb in 2010, then the community project
+OpenRefine in 2012. The application includes work by its many contributors; existing authorship and copyright notices
+are retained. This workshop is maintained independently of that project.
 
-This requires [JDK 11](https://adoptium.net/) or newer, [Apache Maven](https://maven.apache.org/) and [Node.js 18](https://nodejs.org/) or newer.
-
-## Documentation
-
-* [User Manual](https://github.com/datarootsio/data-cleaning-workshop)
-* [FAQ](https://github.com/datarootsio/data-cleaning-workshop)
-
-## Contributing to the project
-
-* [Developers Guide & Architecture](https://github.com/datarootsio/data-cleaning-workshop)
-* [Contributing Guide](https://github.com/datarootsio/data-cleaning-workshop/blob/master/CONTRIBUTING.md)
-* [Project Governance](https://github.com/datarootsio/data-cleaning-workshop/blob/master/GOVERNANCE.md)
-
-## Contact us
-
-* [Community forum](https://github.com/datarootsio/data-cleaning-workshop)
-* [Twitter](https://github.com/datarootsio/data-cleaning-workshop)
-* [Gitter](https://github.com/datarootsio/data-cleaning-workshop)
-* [Matrix (bridged from Gitter)](https://github.com/datarootsio/data-cleaning-workshop)
-
-## Licensing and legal issues
-
-OpenRefine is open source software and is licensed under the BSD license located in the [LICENSE.txt](LICENSE.txt). See the folders `licenses` under `/main/webapp/` as well as within each `/extensions` for information on open source libraries that OpenRefine depends on.
-
-## Funding Data Cleaning Workshop
-
-Data Cleaning Workshop is maintained by a small core team and relies on grants plus community support.
-• **Donate** or become a monthly sponsor: https://github.com/datarootsio/data-cleaning-workshop
-• **See our backers**: https://github.com/datarootsio/data-cleaning-workshop
-• **Machine-readable manifest**: https://github.com/datarootsio/data-cleaning-workshop
-
-## Credits
-
-This software was created by Metaweb Technologies, Inc. and originally written and conceived by [David Huynh](https://github.com/dfhuynh). Metaweb Technologies, Inc. was acquired by Google, Inc. in July 2010 and the product was renamed Google Refine. In October 2012, it was renamed OpenRefine as it transitioned to a community-driven project.
-
-Since 2020, OpenRefine is fiscally sponsored by [Code for Science and Society](https://www.codeforsociety.org/) (CS&S).
-
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for instructions on how to contribute yourself.
+The code is distributed under the BSD-3-Clause license in [LICENSE.txt](LICENSE.txt).
+Third-party notices remain in [packaging/THIRD-PARTY.txt](packaging/THIRD-PARTY.txt),
+`main/webapp/licenses`, and the extension license directories.

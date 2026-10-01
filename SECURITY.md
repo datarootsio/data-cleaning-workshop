@@ -1,16 +1,10 @@
-# Data Cleaning Workshop Security Policy
+# Workshop security policy
 
-## Supported Versions
+This repository is a training snapshot. It does not publish supported production releases or promise ongoing security updates.
+Use synthetic or non-sensitive data for workshop exercises and run the application locally.
 
-Security updates are provided for the latest stable release, and are published as patch releases. For instance, if the latest stable version is 3.8.2, reported vulnerabilities affecting it will be fixed by releasing further patch releases (such as 3.8.3). Accumulated patches are included in the next minor or major release (e.g. 3.9 or 4.0)
+If you discover a security issue, contact the workshop facilitator privately using the contact channel provided for the session.
+Include the affected revision, reproduction steps, and potential impact. Do not post credentials, private data, or vulnerability
+reproduction details in a public issue. Ordinary workshop behavior reports belong in the workshop issue tracker.
 
-Previous releases do not get security updates, so we recommend always running the latest stable release.
-
-## Reporting a Vulnerability
-
-Our core team will try their best to fix any valid vulnerability that is reported to them.
-
-You can privately report a vulnerability to the Data Cleaning Workshop team by [creating a security advisory on GitHub](https://github.com/datarootsio/data-cleaning-workshop). This report will be kept private while it is being assessed by the team.
-
-Keep in mind that Data Cleaning Workshop is designed to run locally on a user's PC, while also making network calls across the internet only upon a user's choice or command.
-As such, certain vulnerabilities might not apply to Data Cleaning Workshop's design. In doubt, please submit a report anyway.
+The workshop maintainers will assess reports and coordinate any necessary follow-up with affected software maintainers.
