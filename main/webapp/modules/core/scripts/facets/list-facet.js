@@ -506,7 +506,7 @@ class ListFacet extends Facet {
         }
       });
     };
-    window.setTimeout(wireEvents, 100);
+    wireEvents();
   }; // end _update()
 
   _renderBodyControls() {

@@ -211,7 +211,7 @@ ExpressionPreviewDialog.Widget = function(
 };
 
 ExpressionPreviewDialog.Widget.prototype.getExpression = function(commit) {
-    var s = jQueryTrim(this.expression || "");
+    var s = this._getCode();
     if (!s.length) {
         return null;
     }
@@ -480,8 +480,12 @@ ExpressionPreviewDialog.Widget.prototype._scheduleUpdate = function() {
 };
 
 ExpressionPreviewDialog.Widget.prototype.update = function() {
+    if (!this._elmts.expressionPreviewTextarea[0].isConnected) {
+        return;
+    }
     var self = this;
     var expression = this.expression = jQueryTrim(this._elmts.expressionPreviewTextarea[0].value);
+    var expressionString = this._getLanguage() + ":" + expression;
     var activeTabName = $("#clustering-functions-tabs").find(".ui-tabs-active a").text().split(' ')[0];
     var params = {
         project: theProject.id,
@@ -495,10 +499,14 @@ ExpressionPreviewDialog.Widget.prototype.update = function() {
         Refine.postCSRF(
             "command/core/preview-expression?" + $.param(params), 
             {
-                expression: this._getLanguage() + ":" + expression,
+                expression: expressionString,
                 rowIndices: JSON.stringify(this._rowIndices) 
             },
             function(data) {
+                if (!self._elmts.expressionPreviewTextarea[0].isConnected ||
+                        self._getExpressionString() !== expressionString) {
+                    return;
+                }
                 if (data.code != "error") {
                     self._results = data.results;
                 } else {

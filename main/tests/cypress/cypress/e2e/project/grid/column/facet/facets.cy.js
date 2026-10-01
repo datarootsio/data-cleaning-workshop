@@ -298,8 +298,12 @@ describe(__filename, function () {
   it('Test facet by choice count', function () {
     cy.loadAndVisitProject('food.small');
     cy.columnActionClick('Shrt_Desc', ['Facet', 'Text facet']);
-    cy.getFacetContainer('Shrt_Desc').find('.facet-body-controls').contains('Facet by choice counts').click();
-    // TODO: This can be flaky, but not sure why. Not reproducible in isolated testing.
+    // Bring the footer action into its scroll container before Cypress checks its click target.
+    cy.getFacetContainer('Shrt_Desc').find('.facet-body-inner').scrollTo('bottom');
+    cy.getFacetContainer('Shrt_Desc')
+      .find('.facet-body-controls')
+      .contains('Facet by choice counts')
+      .click({ scrollBehavior: false });
     cy.get(`#refine-tabs-facets .facets-container .facet-container#facet-1`).should('exist').contains('Shrt_Desc');
   });
 
@@ -345,8 +349,14 @@ describe(__filename, function () {
     cy.get('#refine-tabs-facets .facets-container li:nth-child(1) .facet-body-inner').should('be.visible');
     // collapse the panel
     cy.get('#refine-tabs-facets .facets-container li:nth-child(1) a[bind="minimizeButton"]').click();
-    // Make sure the body is hidden
-    cy.get('#refine-tabs-facets .facets-container li:nth-child(1) .facet-body').should('not.be.visible');
+    // The body remains rendered but is clipped below the collapsed panel's boundary.
+    // Modern Cypress visibility checks treat overflow-clipped elements as visible.
+    cy.get('#refine-tabs-facets .facets-container li:nth-child(1)').should('have.class', 'facet-state-minimize');
+    cy.get('#refine-tabs-facets .facets-container li:nth-child(1) .facet-body').should(($body) => {
+      const panel = $body[0].closest('.facet-container');
+      expect(getComputedStyle(panel).overflow).to.equal('hidden');
+      expect($body[0].getBoundingClientRect().top).to.be.at.least(panel.getBoundingClientRect().bottom);
+    });
   });
 
   it('Test navigating expression history with arrow keys across dialog reopen', function () {
